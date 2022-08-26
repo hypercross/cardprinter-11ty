@@ -2,8 +2,16 @@
 title: volleyball!
 layers:
   play:
-  - [name face-only,   text, Name]
-  - [illust face-only, img,  Illustration]
+  - [illust face-only,   img,  Illustration]
+  - [name face-only,    text,  Name]
+  - [ball h0 face-only,  tag,  h-0]
+  - [ball h1 face-only,  tag,  h-1]
+  - [ball h2 face-only,  tag,  h-2]
+  - [ball h3 face-only,  tag,  h-3]
+  - [ball catch c0 face-only,  tag,  c-0]
+  - [ball catch c1 face-only,  tag,  c-1]
+  - [ball catch c2 face-only,  tag,  c-2]
+  - [ball catch c3 face-only,  tag,  c-3]
 ---
 
 <style>
@@ -12,5 +20,53 @@ layers:
     width: 100%;
     height: 24mm;
     font-family: Xiquezhaopaiti;
+  }
+
+  .card-frame{
+    --fx: 4mm;
+    --fy: 0mm;
+    --bx: 0mm;
+    --by: 0mm
+  }
+
+  .h0, .h1, .h2, .h3{
+    --fy: 12mm;
+  }
+  .c0, .c1, .c2, .c3{
+    --fy: 20mm;
+  }
+
+  .h0, .h2, .c0, .c2{
+    --bx: -4mm;
+  }
+  .h1, .h3, .c1, .c3{
+    --bx: 4mm;
+  }
+
+  .h0, .h1, .c0, .c1{
+    --by: -4mm;
+  }
+  .h2, .h3, .c2, .c3{
+    --by: 4mm;
+  }
+
+  .ball {
+    border-radius: 2mm;
+    transform: translate(var(--fx), var(--fy)) translate(var(--bx), var(--by));
+  }
+  .ball[data-val="1"]{
+    border: 2mm solid dodgerblue;
+  }
+  .ball[data-val="2"]{
+    border: 2mm solid orange;
+  }
+  .ball[data-val="3"]{
+    border: 2mm solid crimson;
+  }
+  .ball.catch[data-val="2"]{
+    border-color: dodgerblue orange orange dodgerblue;
+  }
+  .ball.catch[data-val="3"]{
+    border-color: dodgerblue orange crimson crimson;
   }
 </style>

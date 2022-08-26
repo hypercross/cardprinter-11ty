@@ -3,15 +3,11 @@
   {% set type = layer[1] %}
   {% set val = item[layer[2]] %}
 
-  <div class="card-layer {{class}}">
+  <div class="card-layer {{class}}" data-key={{layer[2]}} data-val={{val}}>
     {%- if type == 'text' -%}
       <p>{{ val }}</p>
     {%- elif type == 'img' -%}
       <img src={{ val }}>
-    {%- elif type == 'tag' -%}
-      {%- if val -%}
-        <div></div>
-      {%- endif -%}
     {%- endif -%}
   </div>
 {%- endfor -%}

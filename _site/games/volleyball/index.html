@@ -72,6 +72,54 @@
     height: 24mm;
     font-family: Xiquezhaopaiti;
   }
+
+  .card-frame{
+    --fx: 4mm;
+    --fy: 0mm;
+    --bx: 0mm;
+    --by: 0mm
+  }
+
+  .h0, .h1, .h2, .h3{
+    --fy: 12mm;
+  }
+  .c0, .c1, .c2, .c3{
+    --fy: 20mm;
+  }
+
+  .h0, .h2, .c0, .c2{
+    --bx: -4mm;
+  }
+  .h1, .h3, .c1, .c3{
+    --bx: 4mm;
+  }
+
+  .h0, .h1, .c0, .c1{
+    --by: -4mm;
+  }
+  .h2, .h3, .c2, .c3{
+    --by: 4mm;
+  }
+
+  .ball {
+    border-radius: 2mm;
+    transform: translate(var(--fx), var(--fy)) translate(var(--bx), var(--by));
+  }
+  .ball[data-val="1"]{
+    border: 2mm solid dodgerblue;
+  }
+  .ball[data-val="2"]{
+    border: 2mm solid orange;
+  }
+  .ball[data-val="3"]{
+    border: 2mm solid crimson;
+  }
+  .ball.catch[data-val="2"]{
+    border-color: dodgerblue orange orange dodgerblue;
+  }
+  .ball.catch[data-val="3"]{
+    border-color: dodgerblue orange crimson crimson;
+  }
 </style>
 <svg class="pnp" width="297mm" height="210mm" viewbox="0 0 297 210">
   <circle class="cross" cx=8.5 cy=13 />
@@ -93,11 +141,43 @@
   
   
 
-  <div class="card-layer name face-only"><p>短发妹</p></div>
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T062748Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=19cb855f0532c851d15effc6ecef1e6329c547e2dc777d41b4fc3249ebb7b0da&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T062748Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=19cb855f0532c851d15effc6ecef1e6329c547e2dc777d41b4fc3249ebb7b0da&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
   
   
 
-  <div class="card-layer illust face-only"><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T055721Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=b462b5451059a613d851b068f56a992c5ad36a1685dda69c0673dc77027a771a&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  <div class="card-layer name face-only" data-key=Name data-val=短发妹><p>短发妹</p></div>
+  
+  
+
+  <div class="card-layer ball h0 face-only" data-key=h-0 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h1 face-only" data-key=h-1 data-val=2></div>
+  
+  
+
+  <div class="card-layer ball h2 face-only" data-key=h-2 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h3 face-only" data-key=h-3 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c0 face-only" data-key=c-0 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c1 face-only" data-key=c-1 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c2 face-only" data-key=c-2 data-val=3></div>
+  
+  
+
+  <div class="card-layer ball catch c3 face-only" data-key=c-3 data-val=0></div>
         </div>
       </foreignObject>
 
@@ -108,11 +188,43 @@
   
   
 
-  <div class="card-layer name face-only"><p>短发妹</p></div>
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T062748Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=19cb855f0532c851d15effc6ecef1e6329c547e2dc777d41b4fc3249ebb7b0da&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T062748Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=19cb855f0532c851d15effc6ecef1e6329c547e2dc777d41b4fc3249ebb7b0da&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
   
   
 
-  <div class="card-layer illust face-only"><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T055721Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=b462b5451059a613d851b068f56a992c5ad36a1685dda69c0673dc77027a771a&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  <div class="card-layer name face-only" data-key=Name data-val=短发妹><p>短发妹</p></div>
+  
+  
+
+  <div class="card-layer ball h0 face-only" data-key=h-0 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h1 face-only" data-key=h-1 data-val=2></div>
+  
+  
+
+  <div class="card-layer ball h2 face-only" data-key=h-2 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h3 face-only" data-key=h-3 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c0 face-only" data-key=c-0 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c1 face-only" data-key=c-1 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c2 face-only" data-key=c-2 data-val=3></div>
+  
+  
+
+  <div class="card-layer ball catch c3 face-only" data-key=c-3 data-val=0></div>
           </div>
         </foreignObject>
       </g>
@@ -124,11 +236,43 @@
   
   
 
-  <div class="card-layer name face-only"><p>短发妹</p></div>
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T062748Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=19cb855f0532c851d15effc6ecef1e6329c547e2dc777d41b4fc3249ebb7b0da&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T062748Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=19cb855f0532c851d15effc6ecef1e6329c547e2dc777d41b4fc3249ebb7b0da&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
   
   
 
-  <div class="card-layer illust face-only"><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T055721Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=b462b5451059a613d851b068f56a992c5ad36a1685dda69c0673dc77027a771a&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  <div class="card-layer name face-only" data-key=Name data-val=短发妹><p>短发妹</p></div>
+  
+  
+
+  <div class="card-layer ball h0 face-only" data-key=h-0 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h1 face-only" data-key=h-1 data-val=3></div>
+  
+  
+
+  <div class="card-layer ball h2 face-only" data-key=h-2 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h3 face-only" data-key=h-3 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c0 face-only" data-key=c-0 data-val=3></div>
+  
+  
+
+  <div class="card-layer ball catch c1 face-only" data-key=c-1 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c2 face-only" data-key=c-2 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c3 face-only" data-key=c-3 data-val=0></div>
         </div>
       </foreignObject>
 
@@ -139,11 +283,43 @@
   
   
 
-  <div class="card-layer name face-only"><p>短发妹</p></div>
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T062748Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=19cb855f0532c851d15effc6ecef1e6329c547e2dc777d41b4fc3249ebb7b0da&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T062748Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=19cb855f0532c851d15effc6ecef1e6329c547e2dc777d41b4fc3249ebb7b0da&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
   
   
 
-  <div class="card-layer illust face-only"><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T055721Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=b462b5451059a613d851b068f56a992c5ad36a1685dda69c0673dc77027a771a&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  <div class="card-layer name face-only" data-key=Name data-val=短发妹><p>短发妹</p></div>
+  
+  
+
+  <div class="card-layer ball h0 face-only" data-key=h-0 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h1 face-only" data-key=h-1 data-val=3></div>
+  
+  
+
+  <div class="card-layer ball h2 face-only" data-key=h-2 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h3 face-only" data-key=h-3 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c0 face-only" data-key=c-0 data-val=3></div>
+  
+  
+
+  <div class="card-layer ball catch c1 face-only" data-key=c-1 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c2 face-only" data-key=c-2 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c3 face-only" data-key=c-3 data-val=0></div>
           </div>
         </foreignObject>
       </g>
@@ -155,11 +331,43 @@
   
   
 
-  <div class="card-layer name face-only"><p>短发妹</p></div>
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T062748Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=19cb855f0532c851d15effc6ecef1e6329c547e2dc777d41b4fc3249ebb7b0da&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T062748Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=19cb855f0532c851d15effc6ecef1e6329c547e2dc777d41b4fc3249ebb7b0da&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
   
   
 
-  <div class="card-layer illust face-only"><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T055721Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=b462b5451059a613d851b068f56a992c5ad36a1685dda69c0673dc77027a771a&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  <div class="card-layer name face-only" data-key=Name data-val=短发妹><p>短发妹</p></div>
+  
+  
+
+  <div class="card-layer ball h0 face-only" data-key=h-0 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h1 face-only" data-key=h-1 data-val=1></div>
+  
+  
+
+  <div class="card-layer ball h2 face-only" data-key=h-2 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h3 face-only" data-key=h-3 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c0 face-only" data-key=c-0 data-val=2></div>
+  
+  
+
+  <div class="card-layer ball catch c1 face-only" data-key=c-1 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c2 face-only" data-key=c-2 data-val=2></div>
+  
+  
+
+  <div class="card-layer ball catch c3 face-only" data-key=c-3 data-val=0></div>
         </div>
       </foreignObject>
 
@@ -170,11 +378,43 @@
   
   
 
-  <div class="card-layer name face-only"><p>短发妹</p></div>
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T062748Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=19cb855f0532c851d15effc6ecef1e6329c547e2dc777d41b4fc3249ebb7b0da&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T062748Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=19cb855f0532c851d15effc6ecef1e6329c547e2dc777d41b4fc3249ebb7b0da&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
   
   
 
-  <div class="card-layer illust face-only"><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T055721Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=b462b5451059a613d851b068f56a992c5ad36a1685dda69c0673dc77027a771a&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  <div class="card-layer name face-only" data-key=Name data-val=短发妹><p>短发妹</p></div>
+  
+  
+
+  <div class="card-layer ball h0 face-only" data-key=h-0 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h1 face-only" data-key=h-1 data-val=1></div>
+  
+  
+
+  <div class="card-layer ball h2 face-only" data-key=h-2 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h3 face-only" data-key=h-3 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c0 face-only" data-key=c-0 data-val=2></div>
+  
+  
+
+  <div class="card-layer ball catch c1 face-only" data-key=c-1 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c2 face-only" data-key=c-2 data-val=2></div>
+  
+  
+
+  <div class="card-layer ball catch c3 face-only" data-key=c-3 data-val=0></div>
           </div>
         </foreignObject>
       </g>
@@ -186,11 +426,43 @@
   
   
 
-  <div class="card-layer name face-only"><p>短发妹</p></div>
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T062748Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=19cb855f0532c851d15effc6ecef1e6329c547e2dc777d41b4fc3249ebb7b0da&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T062748Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=19cb855f0532c851d15effc6ecef1e6329c547e2dc777d41b4fc3249ebb7b0da&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
   
   
 
-  <div class="card-layer illust face-only"><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T055721Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=b462b5451059a613d851b068f56a992c5ad36a1685dda69c0673dc77027a771a&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  <div class="card-layer name face-only" data-key=Name data-val=短发妹><p>短发妹</p></div>
+  
+  
+
+  <div class="card-layer ball h0 face-only" data-key=h-0 data-val=3></div>
+  
+  
+
+  <div class="card-layer ball h1 face-only" data-key=h-1 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h2 face-only" data-key=h-2 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h3 face-only" data-key=h-3 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c0 face-only" data-key=c-0 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c1 face-only" data-key=c-1 data-val=3></div>
+  
+  
+
+  <div class="card-layer ball catch c2 face-only" data-key=c-2 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c3 face-only" data-key=c-3 data-val=0></div>
         </div>
       </foreignObject>
 
@@ -201,11 +473,43 @@
   
   
 
-  <div class="card-layer name face-only"><p>短发妹</p></div>
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T062748Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=19cb855f0532c851d15effc6ecef1e6329c547e2dc777d41b4fc3249ebb7b0da&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T062748Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=19cb855f0532c851d15effc6ecef1e6329c547e2dc777d41b4fc3249ebb7b0da&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
   
   
 
-  <div class="card-layer illust face-only"><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T055721Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=b462b5451059a613d851b068f56a992c5ad36a1685dda69c0673dc77027a771a&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  <div class="card-layer name face-only" data-key=Name data-val=短发妹><p>短发妹</p></div>
+  
+  
+
+  <div class="card-layer ball h0 face-only" data-key=h-0 data-val=3></div>
+  
+  
+
+  <div class="card-layer ball h1 face-only" data-key=h-1 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h2 face-only" data-key=h-2 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h3 face-only" data-key=h-3 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c0 face-only" data-key=c-0 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c1 face-only" data-key=c-1 data-val=3></div>
+  
+  
+
+  <div class="card-layer ball catch c2 face-only" data-key=c-2 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c3 face-only" data-key=c-3 data-val=0></div>
           </div>
         </foreignObject>
       </g>
@@ -217,11 +521,43 @@
   
   
 
-  <div class="card-layer name face-only"><p>短发妹</p></div>
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T062748Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=19cb855f0532c851d15effc6ecef1e6329c547e2dc777d41b4fc3249ebb7b0da&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T062748Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=19cb855f0532c851d15effc6ecef1e6329c547e2dc777d41b4fc3249ebb7b0da&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
   
   
 
-  <div class="card-layer illust face-only"><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T055721Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=b462b5451059a613d851b068f56a992c5ad36a1685dda69c0673dc77027a771a&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  <div class="card-layer name face-only" data-key=Name data-val=短发妹><p>短发妹</p></div>
+  
+  
+
+  <div class="card-layer ball h0 face-only" data-key=h-0 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h1 face-only" data-key=h-1 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h2 face-only" data-key=h-2 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h3 face-only" data-key=h-3 data-val=2></div>
+  
+  
+
+  <div class="card-layer ball catch c0 face-only" data-key=c-0 data-val=2></div>
+  
+  
+
+  <div class="card-layer ball catch c1 face-only" data-key=c-1 data-val=2></div>
+  
+  
+
+  <div class="card-layer ball catch c2 face-only" data-key=c-2 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c3 face-only" data-key=c-3 data-val=0></div>
         </div>
       </foreignObject>
 
@@ -232,11 +568,43 @@
   
   
 
-  <div class="card-layer name face-only"><p>短发妹</p></div>
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T062748Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=19cb855f0532c851d15effc6ecef1e6329c547e2dc777d41b4fc3249ebb7b0da&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T062748Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=19cb855f0532c851d15effc6ecef1e6329c547e2dc777d41b4fc3249ebb7b0da&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
   
   
 
-  <div class="card-layer illust face-only"><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T055721Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=b462b5451059a613d851b068f56a992c5ad36a1685dda69c0673dc77027a771a&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  <div class="card-layer name face-only" data-key=Name data-val=短发妹><p>短发妹</p></div>
+  
+  
+
+  <div class="card-layer ball h0 face-only" data-key=h-0 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h1 face-only" data-key=h-1 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h2 face-only" data-key=h-2 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h3 face-only" data-key=h-3 data-val=2></div>
+  
+  
+
+  <div class="card-layer ball catch c0 face-only" data-key=c-0 data-val=2></div>
+  
+  
+
+  <div class="card-layer ball catch c1 face-only" data-key=c-1 data-val=2></div>
+  
+  
+
+  <div class="card-layer ball catch c2 face-only" data-key=c-2 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c3 face-only" data-key=c-3 data-val=0></div>
           </div>
         </foreignObject>
       </g>
@@ -260,11 +628,43 @@
   
   
 
-  <div class="card-layer name face-only"><p>短发妹</p></div>
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T062748Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=19cb855f0532c851d15effc6ecef1e6329c547e2dc777d41b4fc3249ebb7b0da&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T062748Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=19cb855f0532c851d15effc6ecef1e6329c547e2dc777d41b4fc3249ebb7b0da&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
   
   
 
-  <div class="card-layer illust face-only"><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T055721Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=b462b5451059a613d851b068f56a992c5ad36a1685dda69c0673dc77027a771a&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  <div class="card-layer name face-only" data-key=Name data-val=短发妹><p>短发妹</p></div>
+  
+  
+
+  <div class="card-layer ball h0 face-only" data-key=h-0 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h1 face-only" data-key=h-1 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h2 face-only" data-key=h-2 data-val=2></div>
+  
+  
+
+  <div class="card-layer ball h3 face-only" data-key=h-3 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c0 face-only" data-key=c-0 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c1 face-only" data-key=c-1 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c2 face-only" data-key=c-2 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c3 face-only" data-key=c-3 data-val=3></div>
         </div>
       </foreignObject>
 
@@ -275,11 +675,43 @@
   
   
 
-  <div class="card-layer name face-only"><p>短发妹</p></div>
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T062748Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=19cb855f0532c851d15effc6ecef1e6329c547e2dc777d41b4fc3249ebb7b0da&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T062748Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=19cb855f0532c851d15effc6ecef1e6329c547e2dc777d41b4fc3249ebb7b0da&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
   
   
 
-  <div class="card-layer illust face-only"><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T055721Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=b462b5451059a613d851b068f56a992c5ad36a1685dda69c0673dc77027a771a&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  <div class="card-layer name face-only" data-key=Name data-val=短发妹><p>短发妹</p></div>
+  
+  
+
+  <div class="card-layer ball h0 face-only" data-key=h-0 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h1 face-only" data-key=h-1 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h2 face-only" data-key=h-2 data-val=2></div>
+  
+  
+
+  <div class="card-layer ball h3 face-only" data-key=h-3 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c0 face-only" data-key=c-0 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c1 face-only" data-key=c-1 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c2 face-only" data-key=c-2 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c3 face-only" data-key=c-3 data-val=3></div>
           </div>
         </foreignObject>
       </g>
@@ -291,11 +723,43 @@
   
   
 
-  <div class="card-layer name face-only"><p>短发妹</p></div>
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T062748Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=19cb855f0532c851d15effc6ecef1e6329c547e2dc777d41b4fc3249ebb7b0da&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T062748Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=19cb855f0532c851d15effc6ecef1e6329c547e2dc777d41b4fc3249ebb7b0da&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
   
   
 
-  <div class="card-layer illust face-only"><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T055721Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=b462b5451059a613d851b068f56a992c5ad36a1685dda69c0673dc77027a771a&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  <div class="card-layer name face-only" data-key=Name data-val=短发妹><p>短发妹</p></div>
+  
+  
+
+  <div class="card-layer ball h0 face-only" data-key=h-0 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h1 face-only" data-key=h-1 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h2 face-only" data-key=h-2 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h3 face-only" data-key=h-3 data-val=1></div>
+  
+  
+
+  <div class="card-layer ball catch c0 face-only" data-key=c-0 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c1 face-only" data-key=c-1 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c2 face-only" data-key=c-2 data-val=2></div>
+  
+  
+
+  <div class="card-layer ball catch c3 face-only" data-key=c-3 data-val=2></div>
         </div>
       </foreignObject>
 
@@ -306,11 +770,43 @@
   
   
 
-  <div class="card-layer name face-only"><p>短发妹</p></div>
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T062748Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=19cb855f0532c851d15effc6ecef1e6329c547e2dc777d41b4fc3249ebb7b0da&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T062748Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=19cb855f0532c851d15effc6ecef1e6329c547e2dc777d41b4fc3249ebb7b0da&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
   
   
 
-  <div class="card-layer illust face-only"><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T055721Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=b462b5451059a613d851b068f56a992c5ad36a1685dda69c0673dc77027a771a&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  <div class="card-layer name face-only" data-key=Name data-val=短发妹><p>短发妹</p></div>
+  
+  
+
+  <div class="card-layer ball h0 face-only" data-key=h-0 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h1 face-only" data-key=h-1 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h2 face-only" data-key=h-2 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h3 face-only" data-key=h-3 data-val=1></div>
+  
+  
+
+  <div class="card-layer ball catch c0 face-only" data-key=c-0 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c1 face-only" data-key=c-1 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c2 face-only" data-key=c-2 data-val=2></div>
+  
+  
+
+  <div class="card-layer ball catch c3 face-only" data-key=c-3 data-val=2></div>
           </div>
         </foreignObject>
       </g>
@@ -322,11 +818,43 @@
   
   
 
-  <div class="card-layer name face-only"><p>短发妹</p></div>
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T062748Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=19cb855f0532c851d15effc6ecef1e6329c547e2dc777d41b4fc3249ebb7b0da&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T062748Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=19cb855f0532c851d15effc6ecef1e6329c547e2dc777d41b4fc3249ebb7b0da&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
   
   
 
-  <div class="card-layer illust face-only"><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T055721Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=b462b5451059a613d851b068f56a992c5ad36a1685dda69c0673dc77027a771a&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  <div class="card-layer name face-only" data-key=Name data-val=短发妹><p>短发妹</p></div>
+  
+  
+
+  <div class="card-layer ball h0 face-only" data-key=h-0 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h1 face-only" data-key=h-1 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h2 face-only" data-key=h-2 data-val=1></div>
+  
+  
+
+  <div class="card-layer ball h3 face-only" data-key=h-3 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c0 face-only" data-key=c-0 data-val=1></div>
+  
+  
+
+  <div class="card-layer ball catch c1 face-only" data-key=c-1 data-val=1></div>
+  
+  
+
+  <div class="card-layer ball catch c2 face-only" data-key=c-2 data-val=1></div>
+  
+  
+
+  <div class="card-layer ball catch c3 face-only" data-key=c-3 data-val=1></div>
         </div>
       </foreignObject>
 
@@ -337,11 +865,43 @@
   
   
 
-  <div class="card-layer name face-only"><p>短发妹</p></div>
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T062748Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=19cb855f0532c851d15effc6ecef1e6329c547e2dc777d41b4fc3249ebb7b0da&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T062748Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=19cb855f0532c851d15effc6ecef1e6329c547e2dc777d41b4fc3249ebb7b0da&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
   
   
 
-  <div class="card-layer illust face-only"><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T055721Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=b462b5451059a613d851b068f56a992c5ad36a1685dda69c0673dc77027a771a&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  <div class="card-layer name face-only" data-key=Name data-val=短发妹><p>短发妹</p></div>
+  
+  
+
+  <div class="card-layer ball h0 face-only" data-key=h-0 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h1 face-only" data-key=h-1 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h2 face-only" data-key=h-2 data-val=1></div>
+  
+  
+
+  <div class="card-layer ball h3 face-only" data-key=h-3 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c0 face-only" data-key=c-0 data-val=1></div>
+  
+  
+
+  <div class="card-layer ball catch c1 face-only" data-key=c-1 data-val=1></div>
+  
+  
+
+  <div class="card-layer ball catch c2 face-only" data-key=c-2 data-val=1></div>
+  
+  
+
+  <div class="card-layer ball catch c3 face-only" data-key=c-3 data-val=1></div>
           </div>
         </foreignObject>
       </g>
@@ -353,11 +913,43 @@
   
   
 
-  <div class="card-layer name face-only"><p>短发妹</p></div>
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T062748Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=19cb855f0532c851d15effc6ecef1e6329c547e2dc777d41b4fc3249ebb7b0da&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T062748Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=19cb855f0532c851d15effc6ecef1e6329c547e2dc777d41b4fc3249ebb7b0da&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
   
   
 
-  <div class="card-layer illust face-only"><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T055721Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=b462b5451059a613d851b068f56a992c5ad36a1685dda69c0673dc77027a771a&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  <div class="card-layer name face-only" data-key=Name data-val=短发妹><p>短发妹</p></div>
+  
+  
+
+  <div class="card-layer ball h0 face-only" data-key=h-0 data-val=1></div>
+  
+  
+
+  <div class="card-layer ball h1 face-only" data-key=h-1 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h2 face-only" data-key=h-2 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h3 face-only" data-key=h-3 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c0 face-only" data-key=c-0 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c1 face-only" data-key=c-1 data-val=2></div>
+  
+  
+
+  <div class="card-layer ball catch c2 face-only" data-key=c-2 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c3 face-only" data-key=c-3 data-val=2></div>
         </div>
       </foreignObject>
 
@@ -368,11 +960,43 @@
   
   
 
-  <div class="card-layer name face-only"><p>短发妹</p></div>
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T062748Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=19cb855f0532c851d15effc6ecef1e6329c547e2dc777d41b4fc3249ebb7b0da&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T062748Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=19cb855f0532c851d15effc6ecef1e6329c547e2dc777d41b4fc3249ebb7b0da&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
   
   
 
-  <div class="card-layer illust face-only"><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T055721Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=b462b5451059a613d851b068f56a992c5ad36a1685dda69c0673dc77027a771a&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  <div class="card-layer name face-only" data-key=Name data-val=短发妹><p>短发妹</p></div>
+  
+  
+
+  <div class="card-layer ball h0 face-only" data-key=h-0 data-val=1></div>
+  
+  
+
+  <div class="card-layer ball h1 face-only" data-key=h-1 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h2 face-only" data-key=h-2 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h3 face-only" data-key=h-3 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c0 face-only" data-key=c-0 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c1 face-only" data-key=c-1 data-val=2></div>
+  
+  
+
+  <div class="card-layer ball catch c2 face-only" data-key=c-2 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c3 face-only" data-key=c-3 data-val=2></div>
           </div>
         </foreignObject>
       </g>
@@ -411,11 +1035,43 @@
   
   
 
-  <div class="card-layer name face-only"><p>长发妹</p></div>
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T062748Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=db1e0a7f7565009d568d6c947c506fde0e4257ecf125a09bc403b87acf660cc7&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T062748Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=db1e0a7f7565009d568d6c947c506fde0e4257ecf125a09bc403b87acf660cc7&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
   
   
 
-  <div class="card-layer illust face-only"><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T055721Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=e942c1d20e2bd0a35a6921f426d5846703bcb795e89656a7e0500dc6b220c862&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  <div class="card-layer name face-only" data-key=Name data-val=长发妹><p>长发妹</p></div>
+  
+  
+
+  <div class="card-layer ball h0 face-only" data-key=h-0 data-val=2></div>
+  
+  
+
+  <div class="card-layer ball h1 face-only" data-key=h-1 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h2 face-only" data-key=h-2 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h3 face-only" data-key=h-3 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c0 face-only" data-key=c-0 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c1 face-only" data-key=c-1 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c2 face-only" data-key=c-2 data-val=3></div>
+  
+  
+
+  <div class="card-layer ball catch c3 face-only" data-key=c-3 data-val=0></div>
         </div>
       </foreignObject>
 
@@ -426,11 +1082,43 @@
   
   
 
-  <div class="card-layer name face-only"><p>长发妹</p></div>
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T062748Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=db1e0a7f7565009d568d6c947c506fde0e4257ecf125a09bc403b87acf660cc7&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T062748Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=db1e0a7f7565009d568d6c947c506fde0e4257ecf125a09bc403b87acf660cc7&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
   
   
 
-  <div class="card-layer illust face-only"><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T055721Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=e942c1d20e2bd0a35a6921f426d5846703bcb795e89656a7e0500dc6b220c862&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  <div class="card-layer name face-only" data-key=Name data-val=长发妹><p>长发妹</p></div>
+  
+  
+
+  <div class="card-layer ball h0 face-only" data-key=h-0 data-val=2></div>
+  
+  
+
+  <div class="card-layer ball h1 face-only" data-key=h-1 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h2 face-only" data-key=h-2 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h3 face-only" data-key=h-3 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c0 face-only" data-key=c-0 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c1 face-only" data-key=c-1 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c2 face-only" data-key=c-2 data-val=3></div>
+  
+  
+
+  <div class="card-layer ball catch c3 face-only" data-key=c-3 data-val=0></div>
           </div>
         </foreignObject>
       </g>
@@ -442,11 +1130,43 @@
   
   
 
-  <div class="card-layer name face-only"><p>长发妹</p></div>
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T062748Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=db1e0a7f7565009d568d6c947c506fde0e4257ecf125a09bc403b87acf660cc7&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T062748Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=db1e0a7f7565009d568d6c947c506fde0e4257ecf125a09bc403b87acf660cc7&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
   
   
 
-  <div class="card-layer illust face-only"><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T055721Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=e942c1d20e2bd0a35a6921f426d5846703bcb795e89656a7e0500dc6b220c862&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  <div class="card-layer name face-only" data-key=Name data-val=长发妹><p>长发妹</p></div>
+  
+  
+
+  <div class="card-layer ball h0 face-only" data-key=h-0 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h1 face-only" data-key=h-1 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h2 face-only" data-key=h-2 data-val=3></div>
+  
+  
+
+  <div class="card-layer ball h3 face-only" data-key=h-3 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c0 face-only" data-key=c-0 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c1 face-only" data-key=c-1 data-val=3></div>
+  
+  
+
+  <div class="card-layer ball catch c2 face-only" data-key=c-2 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c3 face-only" data-key=c-3 data-val=0></div>
         </div>
       </foreignObject>
 
@@ -457,11 +1177,43 @@
   
   
 
-  <div class="card-layer name face-only"><p>长发妹</p></div>
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T062748Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=db1e0a7f7565009d568d6c947c506fde0e4257ecf125a09bc403b87acf660cc7&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T062748Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=db1e0a7f7565009d568d6c947c506fde0e4257ecf125a09bc403b87acf660cc7&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
   
   
 
-  <div class="card-layer illust face-only"><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T055721Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=e942c1d20e2bd0a35a6921f426d5846703bcb795e89656a7e0500dc6b220c862&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  <div class="card-layer name face-only" data-key=Name data-val=长发妹><p>长发妹</p></div>
+  
+  
+
+  <div class="card-layer ball h0 face-only" data-key=h-0 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h1 face-only" data-key=h-1 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h2 face-only" data-key=h-2 data-val=3></div>
+  
+  
+
+  <div class="card-layer ball h3 face-only" data-key=h-3 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c0 face-only" data-key=c-0 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c1 face-only" data-key=c-1 data-val=3></div>
+  
+  
+
+  <div class="card-layer ball catch c2 face-only" data-key=c-2 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c3 face-only" data-key=c-3 data-val=0></div>
           </div>
         </foreignObject>
       </g>
@@ -473,11 +1225,43 @@
   
   
 
-  <div class="card-layer name face-only"><p>长发妹</p></div>
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T062748Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=db1e0a7f7565009d568d6c947c506fde0e4257ecf125a09bc403b87acf660cc7&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T062748Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=db1e0a7f7565009d568d6c947c506fde0e4257ecf125a09bc403b87acf660cc7&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
   
   
 
-  <div class="card-layer illust face-only"><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T055721Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=e942c1d20e2bd0a35a6921f426d5846703bcb795e89656a7e0500dc6b220c862&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  <div class="card-layer name face-only" data-key=Name data-val=长发妹><p>长发妹</p></div>
+  
+  
+
+  <div class="card-layer ball h0 face-only" data-key=h-0 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h1 face-only" data-key=h-1 data-val=1></div>
+  
+  
+
+  <div class="card-layer ball h2 face-only" data-key=h-2 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h3 face-only" data-key=h-3 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c0 face-only" data-key=c-0 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c1 face-only" data-key=c-1 data-val=2></div>
+  
+  
+
+  <div class="card-layer ball catch c2 face-only" data-key=c-2 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c3 face-only" data-key=c-3 data-val=2></div>
         </div>
       </foreignObject>
 
@@ -488,11 +1272,43 @@
   
   
 
-  <div class="card-layer name face-only"><p>长发妹</p></div>
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T062748Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=db1e0a7f7565009d568d6c947c506fde0e4257ecf125a09bc403b87acf660cc7&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T062748Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=db1e0a7f7565009d568d6c947c506fde0e4257ecf125a09bc403b87acf660cc7&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
   
   
 
-  <div class="card-layer illust face-only"><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T055721Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=e942c1d20e2bd0a35a6921f426d5846703bcb795e89656a7e0500dc6b220c862&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  <div class="card-layer name face-only" data-key=Name data-val=长发妹><p>长发妹</p></div>
+  
+  
+
+  <div class="card-layer ball h0 face-only" data-key=h-0 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h1 face-only" data-key=h-1 data-val=1></div>
+  
+  
+
+  <div class="card-layer ball h2 face-only" data-key=h-2 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h3 face-only" data-key=h-3 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c0 face-only" data-key=c-0 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c1 face-only" data-key=c-1 data-val=2></div>
+  
+  
+
+  <div class="card-layer ball catch c2 face-only" data-key=c-2 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c3 face-only" data-key=c-3 data-val=2></div>
           </div>
         </foreignObject>
       </g>
@@ -504,11 +1320,43 @@
   
   
 
-  <div class="card-layer name face-only"><p>长发妹</p></div>
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T062748Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=db1e0a7f7565009d568d6c947c506fde0e4257ecf125a09bc403b87acf660cc7&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T062748Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=db1e0a7f7565009d568d6c947c506fde0e4257ecf125a09bc403b87acf660cc7&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
   
   
 
-  <div class="card-layer illust face-only"><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T055721Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=e942c1d20e2bd0a35a6921f426d5846703bcb795e89656a7e0500dc6b220c862&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  <div class="card-layer name face-only" data-key=Name data-val=长发妹><p>长发妹</p></div>
+  
+  
+
+  <div class="card-layer ball h0 face-only" data-key=h-0 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h1 face-only" data-key=h-1 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h2 face-only" data-key=h-2 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h3 face-only" data-key=h-3 data-val=3></div>
+  
+  
+
+  <div class="card-layer ball catch c0 face-only" data-key=c-0 data-val=3></div>
+  
+  
+
+  <div class="card-layer ball catch c1 face-only" data-key=c-1 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c2 face-only" data-key=c-2 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c3 face-only" data-key=c-3 data-val=0></div>
         </div>
       </foreignObject>
 
@@ -519,11 +1367,43 @@
   
   
 
-  <div class="card-layer name face-only"><p>长发妹</p></div>
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T062748Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=db1e0a7f7565009d568d6c947c506fde0e4257ecf125a09bc403b87acf660cc7&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T062748Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=db1e0a7f7565009d568d6c947c506fde0e4257ecf125a09bc403b87acf660cc7&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
   
   
 
-  <div class="card-layer illust face-only"><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T055721Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=e942c1d20e2bd0a35a6921f426d5846703bcb795e89656a7e0500dc6b220c862&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  <div class="card-layer name face-only" data-key=Name data-val=长发妹><p>长发妹</p></div>
+  
+  
+
+  <div class="card-layer ball h0 face-only" data-key=h-0 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h1 face-only" data-key=h-1 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h2 face-only" data-key=h-2 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h3 face-only" data-key=h-3 data-val=3></div>
+  
+  
+
+  <div class="card-layer ball catch c0 face-only" data-key=c-0 data-val=3></div>
+  
+  
+
+  <div class="card-layer ball catch c1 face-only" data-key=c-1 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c2 face-only" data-key=c-2 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c3 face-only" data-key=c-3 data-val=0></div>
           </div>
         </foreignObject>
       </g>
@@ -535,11 +1415,43 @@
   
   
 
-  <div class="card-layer name face-only"><p>长发妹</p></div>
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T062748Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=db1e0a7f7565009d568d6c947c506fde0e4257ecf125a09bc403b87acf660cc7&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T062748Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=db1e0a7f7565009d568d6c947c506fde0e4257ecf125a09bc403b87acf660cc7&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
   
   
 
-  <div class="card-layer illust face-only"><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T055721Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=e942c1d20e2bd0a35a6921f426d5846703bcb795e89656a7e0500dc6b220c862&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  <div class="card-layer name face-only" data-key=Name data-val=长发妹><p>长发妹</p></div>
+  
+  
+
+  <div class="card-layer ball h0 face-only" data-key=h-0 data-val=1></div>
+  
+  
+
+  <div class="card-layer ball h1 face-only" data-key=h-1 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h2 face-only" data-key=h-2 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h3 face-only" data-key=h-3 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c0 face-only" data-key=c-0 data-val=2></div>
+  
+  
+
+  <div class="card-layer ball catch c1 face-only" data-key=c-1 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c2 face-only" data-key=c-2 data-val=2></div>
+  
+  
+
+  <div class="card-layer ball catch c3 face-only" data-key=c-3 data-val=0></div>
         </div>
       </foreignObject>
 
@@ -550,11 +1462,43 @@
   
   
 
-  <div class="card-layer name face-only"><p>长发妹</p></div>
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T062748Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=db1e0a7f7565009d568d6c947c506fde0e4257ecf125a09bc403b87acf660cc7&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T062748Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=db1e0a7f7565009d568d6c947c506fde0e4257ecf125a09bc403b87acf660cc7&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
   
   
 
-  <div class="card-layer illust face-only"><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T055721Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=e942c1d20e2bd0a35a6921f426d5846703bcb795e89656a7e0500dc6b220c862&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  <div class="card-layer name face-only" data-key=Name data-val=长发妹><p>长发妹</p></div>
+  
+  
+
+  <div class="card-layer ball h0 face-only" data-key=h-0 data-val=1></div>
+  
+  
+
+  <div class="card-layer ball h1 face-only" data-key=h-1 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h2 face-only" data-key=h-2 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h3 face-only" data-key=h-3 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c0 face-only" data-key=c-0 data-val=2></div>
+  
+  
+
+  <div class="card-layer ball catch c1 face-only" data-key=c-1 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c2 face-only" data-key=c-2 data-val=2></div>
+  
+  
+
+  <div class="card-layer ball catch c3 face-only" data-key=c-3 data-val=0></div>
           </div>
         </foreignObject>
       </g>
@@ -578,11 +1522,43 @@
   
   
 
-  <div class="card-layer name face-only"><p>长发妹</p></div>
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T062748Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=db1e0a7f7565009d568d6c947c506fde0e4257ecf125a09bc403b87acf660cc7&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T062748Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=db1e0a7f7565009d568d6c947c506fde0e4257ecf125a09bc403b87acf660cc7&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
   
   
 
-  <div class="card-layer illust face-only"><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T055721Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=e942c1d20e2bd0a35a6921f426d5846703bcb795e89656a7e0500dc6b220c862&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  <div class="card-layer name face-only" data-key=Name data-val=长发妹><p>长发妹</p></div>
+  
+  
+
+  <div class="card-layer ball h0 face-only" data-key=h-0 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h1 face-only" data-key=h-1 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h2 face-only" data-key=h-2 data-val=1></div>
+  
+  
+
+  <div class="card-layer ball h3 face-only" data-key=h-3 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c0 face-only" data-key=c-0 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c1 face-only" data-key=c-1 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c2 face-only" data-key=c-2 data-val=2></div>
+  
+  
+
+  <div class="card-layer ball catch c3 face-only" data-key=c-3 data-val=2></div>
         </div>
       </foreignObject>
 
@@ -593,11 +1569,43 @@
   
   
 
-  <div class="card-layer name face-only"><p>长发妹</p></div>
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T062748Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=db1e0a7f7565009d568d6c947c506fde0e4257ecf125a09bc403b87acf660cc7&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T062748Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=db1e0a7f7565009d568d6c947c506fde0e4257ecf125a09bc403b87acf660cc7&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
   
   
 
-  <div class="card-layer illust face-only"><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T055721Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=e942c1d20e2bd0a35a6921f426d5846703bcb795e89656a7e0500dc6b220c862&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  <div class="card-layer name face-only" data-key=Name data-val=长发妹><p>长发妹</p></div>
+  
+  
+
+  <div class="card-layer ball h0 face-only" data-key=h-0 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h1 face-only" data-key=h-1 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h2 face-only" data-key=h-2 data-val=1></div>
+  
+  
+
+  <div class="card-layer ball h3 face-only" data-key=h-3 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c0 face-only" data-key=c-0 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c1 face-only" data-key=c-1 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c2 face-only" data-key=c-2 data-val=2></div>
+  
+  
+
+  <div class="card-layer ball catch c3 face-only" data-key=c-3 data-val=2></div>
           </div>
         </foreignObject>
       </g>
@@ -609,11 +1617,43 @@
   
   
 
-  <div class="card-layer name face-only"><p>长发妹</p></div>
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T062748Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=db1e0a7f7565009d568d6c947c506fde0e4257ecf125a09bc403b87acf660cc7&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T062748Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=db1e0a7f7565009d568d6c947c506fde0e4257ecf125a09bc403b87acf660cc7&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
   
   
 
-  <div class="card-layer illust face-only"><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T055721Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=e942c1d20e2bd0a35a6921f426d5846703bcb795e89656a7e0500dc6b220c862&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  <div class="card-layer name face-only" data-key=Name data-val=长发妹><p>长发妹</p></div>
+  
+  
+
+  <div class="card-layer ball h0 face-only" data-key=h-0 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h1 face-only" data-key=h-1 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h2 face-only" data-key=h-2 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h3 face-only" data-key=h-3 data-val=1></div>
+  
+  
+
+  <div class="card-layer ball catch c0 face-only" data-key=c-0 data-val=1></div>
+  
+  
+
+  <div class="card-layer ball catch c1 face-only" data-key=c-1 data-val=1></div>
+  
+  
+
+  <div class="card-layer ball catch c2 face-only" data-key=c-2 data-val=1></div>
+  
+  
+
+  <div class="card-layer ball catch c3 face-only" data-key=c-3 data-val=1></div>
         </div>
       </foreignObject>
 
@@ -624,11 +1664,43 @@
   
   
 
-  <div class="card-layer name face-only"><p>长发妹</p></div>
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T062748Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=db1e0a7f7565009d568d6c947c506fde0e4257ecf125a09bc403b87acf660cc7&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T062748Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=db1e0a7f7565009d568d6c947c506fde0e4257ecf125a09bc403b87acf660cc7&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
   
   
 
-  <div class="card-layer illust face-only"><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T055721Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=e942c1d20e2bd0a35a6921f426d5846703bcb795e89656a7e0500dc6b220c862&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  <div class="card-layer name face-only" data-key=Name data-val=长发妹><p>长发妹</p></div>
+  
+  
+
+  <div class="card-layer ball h0 face-only" data-key=h-0 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h1 face-only" data-key=h-1 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h2 face-only" data-key=h-2 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h3 face-only" data-key=h-3 data-val=1></div>
+  
+  
+
+  <div class="card-layer ball catch c0 face-only" data-key=c-0 data-val=1></div>
+  
+  
+
+  <div class="card-layer ball catch c1 face-only" data-key=c-1 data-val=1></div>
+  
+  
+
+  <div class="card-layer ball catch c2 face-only" data-key=c-2 data-val=1></div>
+  
+  
+
+  <div class="card-layer ball catch c3 face-only" data-key=c-3 data-val=1></div>
           </div>
         </foreignObject>
       </g>
@@ -640,11 +1712,43 @@
   
   
 
-  <div class="card-layer name face-only"><p>长发妹</p></div>
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T062748Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=db1e0a7f7565009d568d6c947c506fde0e4257ecf125a09bc403b87acf660cc7&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T062748Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=db1e0a7f7565009d568d6c947c506fde0e4257ecf125a09bc403b87acf660cc7&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
   
   
 
-  <div class="card-layer illust face-only"><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T055721Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=e942c1d20e2bd0a35a6921f426d5846703bcb795e89656a7e0500dc6b220c862&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  <div class="card-layer name face-only" data-key=Name data-val=长发妹><p>长发妹</p></div>
+  
+  
+
+  <div class="card-layer ball h0 face-only" data-key=h-0 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h1 face-only" data-key=h-1 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h2 face-only" data-key=h-2 data-val=2></div>
+  
+  
+
+  <div class="card-layer ball h3 face-only" data-key=h-3 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c0 face-only" data-key=c-0 data-val=2></div>
+  
+  
+
+  <div class="card-layer ball catch c1 face-only" data-key=c-1 data-val=2></div>
+  
+  
+
+  <div class="card-layer ball catch c2 face-only" data-key=c-2 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c3 face-only" data-key=c-3 data-val=0></div>
         </div>
       </foreignObject>
 
@@ -655,11 +1759,43 @@
   
   
 
-  <div class="card-layer name face-only"><p>长发妹</p></div>
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T062748Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=db1e0a7f7565009d568d6c947c506fde0e4257ecf125a09bc403b87acf660cc7&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T062748Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=db1e0a7f7565009d568d6c947c506fde0e4257ecf125a09bc403b87acf660cc7&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
   
   
 
-  <div class="card-layer illust face-only"><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T055721Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=e942c1d20e2bd0a35a6921f426d5846703bcb795e89656a7e0500dc6b220c862&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  <div class="card-layer name face-only" data-key=Name data-val=长发妹><p>长发妹</p></div>
+  
+  
+
+  <div class="card-layer ball h0 face-only" data-key=h-0 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h1 face-only" data-key=h-1 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h2 face-only" data-key=h-2 data-val=2></div>
+  
+  
+
+  <div class="card-layer ball h3 face-only" data-key=h-3 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c0 face-only" data-key=c-0 data-val=2></div>
+  
+  
+
+  <div class="card-layer ball catch c1 face-only" data-key=c-1 data-val=2></div>
+  
+  
+
+  <div class="card-layer ball catch c2 face-only" data-key=c-2 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c3 face-only" data-key=c-3 data-val=0></div>
           </div>
         </foreignObject>
       </g>
@@ -671,11 +1807,43 @@
   
   
 
-  <div class="card-layer name face-only"><p>长发妹</p></div>
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T062748Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=db1e0a7f7565009d568d6c947c506fde0e4257ecf125a09bc403b87acf660cc7&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T062748Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=db1e0a7f7565009d568d6c947c506fde0e4257ecf125a09bc403b87acf660cc7&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
   
   
 
-  <div class="card-layer illust face-only"><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T055721Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=e942c1d20e2bd0a35a6921f426d5846703bcb795e89656a7e0500dc6b220c862&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  <div class="card-layer name face-only" data-key=Name data-val=长发妹><p>长发妹</p></div>
+  
+  
+
+  <div class="card-layer ball h0 face-only" data-key=h-0 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h1 face-only" data-key=h-1 data-val=2></div>
+  
+  
+
+  <div class="card-layer ball h2 face-only" data-key=h-2 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h3 face-only" data-key=h-3 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c0 face-only" data-key=c-0 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c1 face-only" data-key=c-1 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c2 face-only" data-key=c-2 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c3 face-only" data-key=c-3 data-val=3></div>
         </div>
       </foreignObject>
 
@@ -686,11 +1854,43 @@
   
   
 
-  <div class="card-layer name face-only"><p>长发妹</p></div>
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T062748Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=db1e0a7f7565009d568d6c947c506fde0e4257ecf125a09bc403b87acf660cc7&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T062748Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=db1e0a7f7565009d568d6c947c506fde0e4257ecf125a09bc403b87acf660cc7&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
   
   
 
-  <div class="card-layer illust face-only"><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T055721Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=e942c1d20e2bd0a35a6921f426d5846703bcb795e89656a7e0500dc6b220c862&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  <div class="card-layer name face-only" data-key=Name data-val=长发妹><p>长发妹</p></div>
+  
+  
+
+  <div class="card-layer ball h0 face-only" data-key=h-0 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h1 face-only" data-key=h-1 data-val=2></div>
+  
+  
+
+  <div class="card-layer ball h2 face-only" data-key=h-2 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball h3 face-only" data-key=h-3 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c0 face-only" data-key=c-0 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c1 face-only" data-key=c-1 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c2 face-only" data-key=c-2 data-val=0></div>
+  
+  
+
+  <div class="card-layer ball catch c3 face-only" data-key=c-3 data-val=3></div>
           </div>
         </foreignObject>
       </g>
