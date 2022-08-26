@@ -1,0 +1,107 @@
+---
+layout: base.njk
+paper: [297, 210]
+card: [56, 88]
+gutter: 4
+padding: 1
+
+items: []
+layers: []
+---
+
+{% set left = (paper[0] % card[0]) / 2 %}
+{% set right = paper[0] - left %}
+
+{% set top = (paper[1] % (card[1] + gutter)) / 2 %}
+{% set bottom = paper[1] - top %}
+
+{% set count = (paper[0] - (paper[0] % card[0])) / card[0] %}
+
+<style>
+  .pnp{
+    fill: none;
+    stroke-width: 0.1;
+    stroke: black;
+  }
+  .pnp circle.cross {
+    r: 2;
+  }
+  .pnp rect.hline {
+    x: 0;
+    width: 100%;
+    height: 0.1px;
+    transform: translateY(-0.05px);
+  }
+  .pnp rect.vline {
+    y: 0;
+    width: 0.1px;
+    height: 100%;
+    transform: translateX(-0.05px);
+  }
+  foreignObject.px-to-mm{
+    transform-origin: top left;
+    transform: scale(calc(25.4 / 96));
+    background: white;
+    overflow: hidden;
+  }
+  .card-frame {
+    height: 100%;
+    position: relative;
+  }
+  .card-layer {
+    position: absolute;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .face .back-only{
+    display: none;
+  }
+  .back .face-only{
+    display: none;
+  }
+</style>
+
+{{ content | safe}}
+
+{%- for skip in range(0, items.length, count) -%}
+<svg class="pnp" width="297mm" height="210mm" viewbox="0 0 297 210">
+  <circle class="cross" cx={{ left  }} cy={{ top    }} />
+  <circle class="cross" cx={{ left  }} cy={{ bottom }} />
+  <circle class="cross" cx={{ right }} cy={{ top }} />
+  <circle class="cross" cx={{ right }} cy={{ bottom }} />
+
+  <rect class="hline" y={{ top }} />
+  <rect class="hline" y={{ bottom }} />
+  <rect class="hline" y={{ (top + bottom) / 2 }} />
+  <rect class="hline" y={{ (top + bottom) / 2 + gutter }} />
+  <rect class="hline" y={{ (top + bottom) / 2 - gutter }} />
+
+  <rect class="vline" x={{ right }} />
+
+  {%- for i in range(0, count) -%}
+    <rect class="vline" x={{ left + card[0] * i }} />
+    {% set item = items[skip + i] %}
+
+  {%- if item -%}
+    <g transform="translate({{left + card[0] * i}}, {{ top }})">
+      <foreignObject class="px-to-mm" width="{{card[0]}}mm" height="{{card[1]}}mm"  style="padding: {{padding}}mm;">
+        <div class="card-frame face {{item.variant}}">
+          {% include "./card.njk" %}
+        </div>
+      </foreignObject>
+
+      <g transform="rotate(180 {{card[0] / 2}} {{card[1] + gutter}})">
+        <foreignObject class="px-to-mm" width="{{card[0]}}mm" height="{{card[1]}}mm"  style="padding: {{padding}}mm;">
+          <div class="card-frame back {{item.variant}}">
+            {% include "./card.njk" %}
+          </div>
+        </foreignObject>
+      </g>
+    </g>
+  {%- endif -%}
+
+  {%- endfor -%}
+</svg>
+{%- endfor -%}

@@ -1,0 +1,17 @@
+{%- for layer in layers[item.variant] -%}
+  {% set class = layer[0] %}
+  {% set type = layer[1] %}
+  {% set val = item[layer[2]] %}
+
+  <div class="card-layer {{class}}">
+    {%- if type == 'text' -%}
+      <p>{{ val }}</p>
+    {%- elif type == 'img' -%}
+      <img src={{ val }}>
+    {%- elif type == 'tag' -%}
+      {%- if val -%}
+        <div></div>
+      {%- endif -%}
+    {%- endif -%}
+  </div>
+{%- endfor -%}

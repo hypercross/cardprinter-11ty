@@ -1,0 +1,5 @@
+{
+  "tags": ["游戏"],
+  "layout": "pnp.njk",
+  "description": "游戏卡牌生成打印。"
+}
