@@ -2,6 +2,7 @@
 title: volleyball!
 layers:
   play:
+  - [back back-ony,      img,  BackIllust]
   - [illust face-only,   img,  Illustration]
   - [name face-only,    text,  Name]
   - [field-up face-only,       tag,  '']
@@ -14,13 +15,30 @@ layers:
   - [ball catch c1 face-only,  tag,  c-1]
   - [ball catch c2 face-only,  tag,  c-2]
   - [ball catch c3 face-only,  tag,  c-3]
+  summary:
+  - [illust face-only,   img,  Illustration]
+  - [name face-only,    text,  Name]
+
+  - [count h0 back-only,  text,  h-0]
+  - [count h1 back-only,  text,  h-1]
+  - [count h2 back-only,  text,  h-2]
+  - [count h3 back-only,  text,  h-3]
+  - [count c0 back-only,  text,  c-0]
+  - [count c1 back-only,  text,  c-1]
+  - [count c2 back-only,  text,  c-2]
+  - [count c3 back-only,  text,  c-3]
+
 ---
 
 <style>
+  .card-layer.illust{
+    padding-left: 12mm;
+  }
+
   .card-layer.name{
     bottom: 0;
     width: 100%;
-    height: 24mm;
+    height: 16mm;
     font-family: Xiquezhaopaiti;
   }
 
@@ -31,8 +49,8 @@ layers:
     --by: 0mm
   }
   .field-up, .field-down{
-    width: 16mm;
-    height: 16mm;
+    width: 12mm;
+    height: 12mm;
     background: white;
     transform: translate(-50%, -50%) translate(2mm, 2mm) translate(var(--fx), var(--fy));
 
@@ -49,21 +67,21 @@ layers:
     --fy: 6mm;
   }
   .c0, .c1, .c2, .c3, .field-down{
-    --fy: 22mm;
+    --fy: 18mm;
   }
 
   .h0, .h2, .c0, .c2{
-    --bx: -4mm;
+    --bx: -3mm;
   }
   .h1, .h3, .c1, .c3{
-    --bx: 4mm;
+    --bx: 3mm;
   }
 
   .h0, .h1, .c0, .c1{
-    --by: -4mm;
+    --by: -3mm;
   }
   .h2, .h3, .c2, .c3{
-    --by: 4mm;
+    --by: 3mm;
   }
 
   .ball {

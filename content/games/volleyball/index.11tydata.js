@@ -20,39 +20,31 @@ async function loadVolleyballCards() {
 
 function findBalls(card) {
   if (card.variant !== 'play') return;
-  for (let i = 0; i < 12; i++) {
-    const d = `${1 + Math.floor(i / 4)}`;
-    const p = i % 4;
-
-    const key1 = `h-${p}-${d}`;
-    card[key1] = card.Hits[p] === d ? 1 : 0;
-    const key2 = `c-${p}-${d}`;
-    card[key2] = card.Catches[p] === d ? 1 : 0;
+  for (let p = 0; p < 4; p++) {
+    const key1 = `h-${p}`;
+    card[key1] = card.Hits[p];
+    const key2 = `c-${p}`;
+    card[key2] = card.Catches[p];
   }
 }
 
 function findSummary(card, cards) {
   if (card.variant !== 'summary') return;
 
-  for (const other of cards) {
-    if (other.variant !== 'play' || other.Name !== card.Name) return;
+  for (let p = 0; p < 4; p++) {
+    const key1 = `h-${p}`;
+    card[key1] = card[key1] || [0, 0, 0, 0];
+    const key2 = `c-${p}`;
+    card[key2] = card[key2] || [0, 0, 0, 0];
 
-    for (let i = 0; i < 12; i++) {
-      const d = `${1 + Math.floor(i / 4)}`;
-      const p = i % 4;
-
-      let key = `h-${p}-${d}`;
-      card[key] = card[key] || 0;
-      if (other.Hits[p] === d) {
-        card[key]++;
-      }
-
-      key = `c-${p}-${d}`;
-      card[key] = card[key] || 0;
-      if (other.Catches[p] === d) {
-        card[key]++;
-      }
+    for (const other of cards) {
+      if (other.variant !== 'play' || other.Name !== card.Name) return;
+      card[key1][`${other.Catches[p]}`]++;
+      card[key2][`${other.Hits[p]}`]++;
     }
+
+    card[key1] = card[key1].join(', ');
+    card[key2] = card[key2].join(', ');
   }
 }
 

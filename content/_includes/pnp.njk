@@ -67,13 +67,15 @@ layers: []
 
 {%- for skip in range(0, items.length, count) -%}
 <svg class="pnp" width="297mm" height="210mm" viewbox="0 0 297 210">
-  <circle class="cross" cx={{ left  }} cy={{ top    }} />
-  <circle class="cross" cx={{ left  }} cy={{ bottom }} />
-  <circle class="cross" cx={{ right }} cy={{ top }} />
-  <circle class="cross" cx={{ right }} cy={{ bottom }} />
+  <circle class="cross" cx={{ left  }} cy={{ top - gutter   }} />
+  <circle class="cross" cx={{ left  }} cy={{ bottom + gutter }} />
+  <circle class="cross" cx={{ right }} cy={{ top - gutter}} />
+  <circle class="cross" cx={{ right }} cy={{ bottom + gutter}} />
 
   <rect class="hline" y={{ top }} />
+  <rect class="hline" y={{ top - gutter }} />
   <rect class="hline" y={{ bottom }} />
+  <rect class="hline" y={{ bottom + gutter }} />
   <rect class="hline" y={{ (top + bottom) / 2 }} />
   <rect class="hline" y={{ (top + bottom) / 2 + gutter }} />
   <rect class="hline" y={{ (top + bottom) / 2 - gutter }} />

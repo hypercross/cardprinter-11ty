@@ -66,10 +66,14 @@
 
 
 <style>
+  .card-layer.illust{
+    padding-left: 12mm;
+  }
+
   .card-layer.name{
     bottom: 0;
     width: 100%;
-    height: 24mm;
+    height: 16mm;
     font-family: Xiquezhaopaiti;
   }
 
@@ -80,8 +84,8 @@
     --by: 0mm
   }
   .field-up, .field-down{
-    width: 16mm;
-    height: 16mm;
+    width: 12mm;
+    height: 12mm;
     background: white;
     transform: translate(-50%, -50%) translate(2mm, 2mm) translate(var(--fx), var(--fy));
 
@@ -98,21 +102,21 @@
     --fy: 6mm;
   }
   .c0, .c1, .c2, .c3, .field-down{
-    --fy: 22mm;
+    --fy: 18mm;
   }
 
   .h0, .h2, .c0, .c2{
-    --bx: -4mm;
+    --bx: -3mm;
   }
   .h1, .h3, .c1, .c3{
-    --bx: 4mm;
+    --bx: 3mm;
   }
 
   .h0, .h1, .c0, .c1{
-    --by: -4mm;
+    --by: -3mm;
   }
   .h2, .h3, .c2, .c3{
-    --by: 4mm;
+    --by: 3mm;
   }
 
   .ball {
@@ -136,13 +140,15 @@
   }
 </style>
 <svg class="pnp" width="297mm" height="210mm" viewbox="0 0 297 210">
-  <circle class="cross" cx=8.5 cy=13 />
-  <circle class="cross" cx=8.5 cy=197 />
-  <circle class="cross" cx=288.5 cy=13 />
-  <circle class="cross" cx=288.5 cy=197 />
+  <circle class="cross" cx=8.5 cy=9 />
+  <circle class="cross" cx=8.5 cy=201 />
+  <circle class="cross" cx=288.5 cy=9 />
+  <circle class="cross" cx=288.5 cy=201 />
 
   <rect class="hline" y=13 />
+  <rect class="hline" y=9 />
   <rect class="hline" y=197 />
+  <rect class="hline" y=201 />
   <rect class="hline" y=105 />
   <rect class="hline" y=109 />
   <rect class="hline" y=101 />
@@ -155,7 +161,11 @@
   
   
 
-  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T064425Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=5e024789296ac340bf13c84221d6f7d4c7310bf335723008270d6db2d7fcf5b4&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T064425Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=5e024789296ac340bf13c84221d6f7d4c7310bf335723008270d6db2d7fcf5b4&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  <div class="card-layer back back-ony" data-key=BackIllust data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9cd5c1cc-f233-4d60-9a7d-850aa556f1d4/Back.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070820Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=69683dc65bb9a360dd375545a2ec447bfdf0850768a1cb98c0a7527f0568a764&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9cd5c1cc-f233-4d60-9a7d-850aa556f1d4/Back.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070820Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=69683dc65bb9a360dd375545a2ec447bfdf0850768a1cb98c0a7527f0568a764&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  
+  
+
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=c0cfe440401e2e3781c910c7ee12ced34835b0dbad507b8f481caaff914fffeb&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=c0cfe440401e2e3781c910c7ee12ced34835b0dbad507b8f481caaff914fffeb&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
   
   
 
@@ -210,7 +220,11 @@
   
   
 
-  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T064425Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=5e024789296ac340bf13c84221d6f7d4c7310bf335723008270d6db2d7fcf5b4&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T064425Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=5e024789296ac340bf13c84221d6f7d4c7310bf335723008270d6db2d7fcf5b4&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  <div class="card-layer back back-ony" data-key=BackIllust data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9cd5c1cc-f233-4d60-9a7d-850aa556f1d4/Back.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070820Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=69683dc65bb9a360dd375545a2ec447bfdf0850768a1cb98c0a7527f0568a764&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9cd5c1cc-f233-4d60-9a7d-850aa556f1d4/Back.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070820Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=69683dc65bb9a360dd375545a2ec447bfdf0850768a1cb98c0a7527f0568a764&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  
+  
+
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=c0cfe440401e2e3781c910c7ee12ced34835b0dbad507b8f481caaff914fffeb&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=c0cfe440401e2e3781c910c7ee12ced34835b0dbad507b8f481caaff914fffeb&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
   
   
 
@@ -266,7 +280,11 @@
   
   
 
-  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T064425Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=5e024789296ac340bf13c84221d6f7d4c7310bf335723008270d6db2d7fcf5b4&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T064425Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=5e024789296ac340bf13c84221d6f7d4c7310bf335723008270d6db2d7fcf5b4&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  <div class="card-layer back back-ony" data-key=BackIllust data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9cd5c1cc-f233-4d60-9a7d-850aa556f1d4/Back.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070820Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=69683dc65bb9a360dd375545a2ec447bfdf0850768a1cb98c0a7527f0568a764&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9cd5c1cc-f233-4d60-9a7d-850aa556f1d4/Back.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070820Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=69683dc65bb9a360dd375545a2ec447bfdf0850768a1cb98c0a7527f0568a764&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  
+  
+
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=c0cfe440401e2e3781c910c7ee12ced34835b0dbad507b8f481caaff914fffeb&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=c0cfe440401e2e3781c910c7ee12ced34835b0dbad507b8f481caaff914fffeb&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
   
   
 
@@ -321,7 +339,11 @@
   
   
 
-  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T064425Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=5e024789296ac340bf13c84221d6f7d4c7310bf335723008270d6db2d7fcf5b4&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T064425Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=5e024789296ac340bf13c84221d6f7d4c7310bf335723008270d6db2d7fcf5b4&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  <div class="card-layer back back-ony" data-key=BackIllust data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9cd5c1cc-f233-4d60-9a7d-850aa556f1d4/Back.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070820Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=69683dc65bb9a360dd375545a2ec447bfdf0850768a1cb98c0a7527f0568a764&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9cd5c1cc-f233-4d60-9a7d-850aa556f1d4/Back.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070820Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=69683dc65bb9a360dd375545a2ec447bfdf0850768a1cb98c0a7527f0568a764&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  
+  
+
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=c0cfe440401e2e3781c910c7ee12ced34835b0dbad507b8f481caaff914fffeb&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=c0cfe440401e2e3781c910c7ee12ced34835b0dbad507b8f481caaff914fffeb&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
   
   
 
@@ -377,7 +399,11 @@
   
   
 
-  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T064425Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=5e024789296ac340bf13c84221d6f7d4c7310bf335723008270d6db2d7fcf5b4&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T064425Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=5e024789296ac340bf13c84221d6f7d4c7310bf335723008270d6db2d7fcf5b4&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  <div class="card-layer back back-ony" data-key=BackIllust data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9cd5c1cc-f233-4d60-9a7d-850aa556f1d4/Back.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070820Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=69683dc65bb9a360dd375545a2ec447bfdf0850768a1cb98c0a7527f0568a764&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9cd5c1cc-f233-4d60-9a7d-850aa556f1d4/Back.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070820Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=69683dc65bb9a360dd375545a2ec447bfdf0850768a1cb98c0a7527f0568a764&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  
+  
+
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=c0cfe440401e2e3781c910c7ee12ced34835b0dbad507b8f481caaff914fffeb&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=c0cfe440401e2e3781c910c7ee12ced34835b0dbad507b8f481caaff914fffeb&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
   
   
 
@@ -432,7 +458,11 @@
   
   
 
-  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T064425Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=5e024789296ac340bf13c84221d6f7d4c7310bf335723008270d6db2d7fcf5b4&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T064425Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=5e024789296ac340bf13c84221d6f7d4c7310bf335723008270d6db2d7fcf5b4&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  <div class="card-layer back back-ony" data-key=BackIllust data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9cd5c1cc-f233-4d60-9a7d-850aa556f1d4/Back.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070820Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=69683dc65bb9a360dd375545a2ec447bfdf0850768a1cb98c0a7527f0568a764&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9cd5c1cc-f233-4d60-9a7d-850aa556f1d4/Back.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070820Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=69683dc65bb9a360dd375545a2ec447bfdf0850768a1cb98c0a7527f0568a764&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  
+  
+
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=c0cfe440401e2e3781c910c7ee12ced34835b0dbad507b8f481caaff914fffeb&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=c0cfe440401e2e3781c910c7ee12ced34835b0dbad507b8f481caaff914fffeb&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
   
   
 
@@ -488,7 +518,11 @@
   
   
 
-  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T064425Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=5e024789296ac340bf13c84221d6f7d4c7310bf335723008270d6db2d7fcf5b4&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T064425Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=5e024789296ac340bf13c84221d6f7d4c7310bf335723008270d6db2d7fcf5b4&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  <div class="card-layer back back-ony" data-key=BackIllust data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9cd5c1cc-f233-4d60-9a7d-850aa556f1d4/Back.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070820Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=69683dc65bb9a360dd375545a2ec447bfdf0850768a1cb98c0a7527f0568a764&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9cd5c1cc-f233-4d60-9a7d-850aa556f1d4/Back.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070820Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=69683dc65bb9a360dd375545a2ec447bfdf0850768a1cb98c0a7527f0568a764&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  
+  
+
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=c0cfe440401e2e3781c910c7ee12ced34835b0dbad507b8f481caaff914fffeb&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=c0cfe440401e2e3781c910c7ee12ced34835b0dbad507b8f481caaff914fffeb&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
   
   
 
@@ -543,7 +577,11 @@
   
   
 
-  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T064425Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=5e024789296ac340bf13c84221d6f7d4c7310bf335723008270d6db2d7fcf5b4&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T064425Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=5e024789296ac340bf13c84221d6f7d4c7310bf335723008270d6db2d7fcf5b4&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  <div class="card-layer back back-ony" data-key=BackIllust data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9cd5c1cc-f233-4d60-9a7d-850aa556f1d4/Back.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070820Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=69683dc65bb9a360dd375545a2ec447bfdf0850768a1cb98c0a7527f0568a764&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9cd5c1cc-f233-4d60-9a7d-850aa556f1d4/Back.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070820Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=69683dc65bb9a360dd375545a2ec447bfdf0850768a1cb98c0a7527f0568a764&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  
+  
+
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=c0cfe440401e2e3781c910c7ee12ced34835b0dbad507b8f481caaff914fffeb&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=c0cfe440401e2e3781c910c7ee12ced34835b0dbad507b8f481caaff914fffeb&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
   
   
 
@@ -599,7 +637,11 @@
   
   
 
-  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T064425Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=5e024789296ac340bf13c84221d6f7d4c7310bf335723008270d6db2d7fcf5b4&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T064425Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=5e024789296ac340bf13c84221d6f7d4c7310bf335723008270d6db2d7fcf5b4&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  <div class="card-layer back back-ony" data-key=BackIllust data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9cd5c1cc-f233-4d60-9a7d-850aa556f1d4/Back.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070820Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=69683dc65bb9a360dd375545a2ec447bfdf0850768a1cb98c0a7527f0568a764&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9cd5c1cc-f233-4d60-9a7d-850aa556f1d4/Back.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070820Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=69683dc65bb9a360dd375545a2ec447bfdf0850768a1cb98c0a7527f0568a764&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  
+  
+
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=c0cfe440401e2e3781c910c7ee12ced34835b0dbad507b8f481caaff914fffeb&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=c0cfe440401e2e3781c910c7ee12ced34835b0dbad507b8f481caaff914fffeb&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
   
   
 
@@ -654,7 +696,11 @@
   
   
 
-  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T064425Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=5e024789296ac340bf13c84221d6f7d4c7310bf335723008270d6db2d7fcf5b4&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T064425Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=5e024789296ac340bf13c84221d6f7d4c7310bf335723008270d6db2d7fcf5b4&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  <div class="card-layer back back-ony" data-key=BackIllust data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9cd5c1cc-f233-4d60-9a7d-850aa556f1d4/Back.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070820Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=69683dc65bb9a360dd375545a2ec447bfdf0850768a1cb98c0a7527f0568a764&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9cd5c1cc-f233-4d60-9a7d-850aa556f1d4/Back.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070820Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=69683dc65bb9a360dd375545a2ec447bfdf0850768a1cb98c0a7527f0568a764&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  
+  
+
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=c0cfe440401e2e3781c910c7ee12ced34835b0dbad507b8f481caaff914fffeb&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=c0cfe440401e2e3781c910c7ee12ced34835b0dbad507b8f481caaff914fffeb&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
   
   
 
@@ -703,13 +749,15 @@
         </foreignObject>
       </g>
     </g></svg><svg class="pnp" width="297mm" height="210mm" viewbox="0 0 297 210">
-  <circle class="cross" cx=8.5 cy=13 />
-  <circle class="cross" cx=8.5 cy=197 />
-  <circle class="cross" cx=288.5 cy=13 />
-  <circle class="cross" cx=288.5 cy=197 />
+  <circle class="cross" cx=8.5 cy=9 />
+  <circle class="cross" cx=8.5 cy=201 />
+  <circle class="cross" cx=288.5 cy=9 />
+  <circle class="cross" cx=288.5 cy=201 />
 
   <rect class="hline" y=13 />
+  <rect class="hline" y=9 />
   <rect class="hline" y=197 />
+  <rect class="hline" y=201 />
   <rect class="hline" y=105 />
   <rect class="hline" y=109 />
   <rect class="hline" y=101 />
@@ -722,7 +770,11 @@
   
   
 
-  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T064425Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=5e024789296ac340bf13c84221d6f7d4c7310bf335723008270d6db2d7fcf5b4&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T064425Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=5e024789296ac340bf13c84221d6f7d4c7310bf335723008270d6db2d7fcf5b4&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  <div class="card-layer back back-ony" data-key=BackIllust data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9cd5c1cc-f233-4d60-9a7d-850aa556f1d4/Back.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070820Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=69683dc65bb9a360dd375545a2ec447bfdf0850768a1cb98c0a7527f0568a764&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9cd5c1cc-f233-4d60-9a7d-850aa556f1d4/Back.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070820Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=69683dc65bb9a360dd375545a2ec447bfdf0850768a1cb98c0a7527f0568a764&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  
+  
+
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=c0cfe440401e2e3781c910c7ee12ced34835b0dbad507b8f481caaff914fffeb&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=c0cfe440401e2e3781c910c7ee12ced34835b0dbad507b8f481caaff914fffeb&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
   
   
 
@@ -777,7 +829,11 @@
   
   
 
-  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T064425Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=5e024789296ac340bf13c84221d6f7d4c7310bf335723008270d6db2d7fcf5b4&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T064425Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=5e024789296ac340bf13c84221d6f7d4c7310bf335723008270d6db2d7fcf5b4&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  <div class="card-layer back back-ony" data-key=BackIllust data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9cd5c1cc-f233-4d60-9a7d-850aa556f1d4/Back.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070820Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=69683dc65bb9a360dd375545a2ec447bfdf0850768a1cb98c0a7527f0568a764&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9cd5c1cc-f233-4d60-9a7d-850aa556f1d4/Back.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070820Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=69683dc65bb9a360dd375545a2ec447bfdf0850768a1cb98c0a7527f0568a764&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  
+  
+
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=c0cfe440401e2e3781c910c7ee12ced34835b0dbad507b8f481caaff914fffeb&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=c0cfe440401e2e3781c910c7ee12ced34835b0dbad507b8f481caaff914fffeb&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
   
   
 
@@ -833,7 +889,11 @@
   
   
 
-  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T064425Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=5e024789296ac340bf13c84221d6f7d4c7310bf335723008270d6db2d7fcf5b4&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T064425Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=5e024789296ac340bf13c84221d6f7d4c7310bf335723008270d6db2d7fcf5b4&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  <div class="card-layer back back-ony" data-key=BackIllust data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9cd5c1cc-f233-4d60-9a7d-850aa556f1d4/Back.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070820Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=69683dc65bb9a360dd375545a2ec447bfdf0850768a1cb98c0a7527f0568a764&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9cd5c1cc-f233-4d60-9a7d-850aa556f1d4/Back.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070820Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=69683dc65bb9a360dd375545a2ec447bfdf0850768a1cb98c0a7527f0568a764&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  
+  
+
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=c0cfe440401e2e3781c910c7ee12ced34835b0dbad507b8f481caaff914fffeb&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=c0cfe440401e2e3781c910c7ee12ced34835b0dbad507b8f481caaff914fffeb&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
   
   
 
@@ -888,7 +948,11 @@
   
   
 
-  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T064425Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=5e024789296ac340bf13c84221d6f7d4c7310bf335723008270d6db2d7fcf5b4&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T064425Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=5e024789296ac340bf13c84221d6f7d4c7310bf335723008270d6db2d7fcf5b4&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  <div class="card-layer back back-ony" data-key=BackIllust data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9cd5c1cc-f233-4d60-9a7d-850aa556f1d4/Back.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070820Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=69683dc65bb9a360dd375545a2ec447bfdf0850768a1cb98c0a7527f0568a764&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9cd5c1cc-f233-4d60-9a7d-850aa556f1d4/Back.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070820Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=69683dc65bb9a360dd375545a2ec447bfdf0850768a1cb98c0a7527f0568a764&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  
+  
+
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=c0cfe440401e2e3781c910c7ee12ced34835b0dbad507b8f481caaff914fffeb&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=c0cfe440401e2e3781c910c7ee12ced34835b0dbad507b8f481caaff914fffeb&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
   
   
 
@@ -944,7 +1008,11 @@
   
   
 
-  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T064425Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=5e024789296ac340bf13c84221d6f7d4c7310bf335723008270d6db2d7fcf5b4&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T064425Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=5e024789296ac340bf13c84221d6f7d4c7310bf335723008270d6db2d7fcf5b4&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  <div class="card-layer back back-ony" data-key=BackIllust data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9cd5c1cc-f233-4d60-9a7d-850aa556f1d4/Back.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070820Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=69683dc65bb9a360dd375545a2ec447bfdf0850768a1cb98c0a7527f0568a764&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9cd5c1cc-f233-4d60-9a7d-850aa556f1d4/Back.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070820Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=69683dc65bb9a360dd375545a2ec447bfdf0850768a1cb98c0a7527f0568a764&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  
+  
+
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=c0cfe440401e2e3781c910c7ee12ced34835b0dbad507b8f481caaff914fffeb&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=c0cfe440401e2e3781c910c7ee12ced34835b0dbad507b8f481caaff914fffeb&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
   
   
 
@@ -999,7 +1067,11 @@
   
   
 
-  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T064425Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=5e024789296ac340bf13c84221d6f7d4c7310bf335723008270d6db2d7fcf5b4&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T064425Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=5e024789296ac340bf13c84221d6f7d4c7310bf335723008270d6db2d7fcf5b4&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  <div class="card-layer back back-ony" data-key=BackIllust data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9cd5c1cc-f233-4d60-9a7d-850aa556f1d4/Back.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070820Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=69683dc65bb9a360dd375545a2ec447bfdf0850768a1cb98c0a7527f0568a764&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9cd5c1cc-f233-4d60-9a7d-850aa556f1d4/Back.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070820Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=69683dc65bb9a360dd375545a2ec447bfdf0850768a1cb98c0a7527f0568a764&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  
+  
+
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=c0cfe440401e2e3781c910c7ee12ced34835b0dbad507b8f481caaff914fffeb&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=c0cfe440401e2e3781c910c7ee12ced34835b0dbad507b8f481caaff914fffeb&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
   
   
 
@@ -1055,7 +1127,11 @@
   
   
 
-  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T064425Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=5e024789296ac340bf13c84221d6f7d4c7310bf335723008270d6db2d7fcf5b4&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T064425Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=5e024789296ac340bf13c84221d6f7d4c7310bf335723008270d6db2d7fcf5b4&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  <div class="card-layer back back-ony" data-key=BackIllust data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9cd5c1cc-f233-4d60-9a7d-850aa556f1d4/Back.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070820Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=69683dc65bb9a360dd375545a2ec447bfdf0850768a1cb98c0a7527f0568a764&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9cd5c1cc-f233-4d60-9a7d-850aa556f1d4/Back.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070820Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=69683dc65bb9a360dd375545a2ec447bfdf0850768a1cb98c0a7527f0568a764&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  
+  
+
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=c0cfe440401e2e3781c910c7ee12ced34835b0dbad507b8f481caaff914fffeb&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=c0cfe440401e2e3781c910c7ee12ced34835b0dbad507b8f481caaff914fffeb&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
   
   
 
@@ -1110,7 +1186,11 @@
   
   
 
-  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T064425Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=5e024789296ac340bf13c84221d6f7d4c7310bf335723008270d6db2d7fcf5b4&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T064425Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=5e024789296ac340bf13c84221d6f7d4c7310bf335723008270d6db2d7fcf5b4&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  <div class="card-layer back back-ony" data-key=BackIllust data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9cd5c1cc-f233-4d60-9a7d-850aa556f1d4/Back.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070820Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=69683dc65bb9a360dd375545a2ec447bfdf0850768a1cb98c0a7527f0568a764&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9cd5c1cc-f233-4d60-9a7d-850aa556f1d4/Back.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070820Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=69683dc65bb9a360dd375545a2ec447bfdf0850768a1cb98c0a7527f0568a764&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  
+  
+
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=c0cfe440401e2e3781c910c7ee12ced34835b0dbad507b8f481caaff914fffeb&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=c0cfe440401e2e3781c910c7ee12ced34835b0dbad507b8f481caaff914fffeb&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
   
   
 
@@ -1163,6 +1243,46 @@
       <foreignObject class="px-to-mm" width="56mm" height="88mm"  style="padding: 1mm;">
         <div class="card-frame face summary">
           
+  
+  
+
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=c0cfe440401e2e3781c910c7ee12ced34835b0dbad507b8f481caaff914fffeb&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=c0cfe440401e2e3781c910c7ee12ced34835b0dbad507b8f481caaff914fffeb&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  
+  
+
+  <div class="card-layer name face-only" data-key=Name data-val=短发妹><p>短发妹</p></div>
+  
+  
+
+  <div class="card-layer count h0 back-only" data-key=h-0 data-val=><p></p></div>
+  
+  
+
+  <div class="card-layer count h1 back-only" data-key=h-1 data-val=><p></p></div>
+  
+  
+
+  <div class="card-layer count h2 back-only" data-key=h-2 data-val=><p></p></div>
+  
+  
+
+  <div class="card-layer count h3 back-only" data-key=h-3 data-val=><p></p></div>
+  
+  
+
+  <div class="card-layer count c0 back-only" data-key=c-0 data-val=><p></p></div>
+  
+  
+
+  <div class="card-layer count c1 back-only" data-key=c-1 data-val=><p></p></div>
+  
+  
+
+  <div class="card-layer count c2 back-only" data-key=c-2 data-val=><p></p></div>
+  
+  
+
+  <div class="card-layer count c3 back-only" data-key=c-3 data-val=><p></p></div>
         </div>
       </foreignObject>
 
@@ -1170,17 +1290,59 @@
         <foreignObject class="px-to-mm" width="56mm" height="88mm"  style="padding: 1mm;">
           <div class="card-frame back summary">
             
+  
+  
+
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=c0cfe440401e2e3781c910c7ee12ced34835b0dbad507b8f481caaff914fffeb&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39fe54fd-000c-4669-a09c-91d2b941ffd5/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=c0cfe440401e2e3781c910c7ee12ced34835b0dbad507b8f481caaff914fffeb&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  
+  
+
+  <div class="card-layer name face-only" data-key=Name data-val=短发妹><p>短发妹</p></div>
+  
+  
+
+  <div class="card-layer count h0 back-only" data-key=h-0 data-val=><p></p></div>
+  
+  
+
+  <div class="card-layer count h1 back-only" data-key=h-1 data-val=><p></p></div>
+  
+  
+
+  <div class="card-layer count h2 back-only" data-key=h-2 data-val=><p></p></div>
+  
+  
+
+  <div class="card-layer count h3 back-only" data-key=h-3 data-val=><p></p></div>
+  
+  
+
+  <div class="card-layer count c0 back-only" data-key=c-0 data-val=><p></p></div>
+  
+  
+
+  <div class="card-layer count c1 back-only" data-key=c-1 data-val=><p></p></div>
+  
+  
+
+  <div class="card-layer count c2 back-only" data-key=c-2 data-val=><p></p></div>
+  
+  
+
+  <div class="card-layer count c3 back-only" data-key=c-3 data-val=><p></p></div>
           </div>
         </foreignObject>
       </g>
     </g></svg><svg class="pnp" width="297mm" height="210mm" viewbox="0 0 297 210">
-  <circle class="cross" cx=8.5 cy=13 />
-  <circle class="cross" cx=8.5 cy=197 />
-  <circle class="cross" cx=288.5 cy=13 />
-  <circle class="cross" cx=288.5 cy=197 />
+  <circle class="cross" cx=8.5 cy=9 />
+  <circle class="cross" cx=8.5 cy=201 />
+  <circle class="cross" cx=288.5 cy=9 />
+  <circle class="cross" cx=288.5 cy=201 />
 
   <rect class="hline" y=13 />
+  <rect class="hline" y=9 />
   <rect class="hline" y=197 />
+  <rect class="hline" y=201 />
   <rect class="hline" y=105 />
   <rect class="hline" y=109 />
   <rect class="hline" y=101 />
@@ -1193,7 +1355,11 @@
   
   
 
-  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T064425Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=8aeb0f89a5d84095c3088cd916d18843bf65a90e7a9528031dd3beb816e7d33a&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T064425Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=8aeb0f89a5d84095c3088cd916d18843bf65a90e7a9528031dd3beb816e7d33a&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  <div class="card-layer back back-ony" data-key=BackIllust data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9cd5c1cc-f233-4d60-9a7d-850aa556f1d4/Back.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070820Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=69683dc65bb9a360dd375545a2ec447bfdf0850768a1cb98c0a7527f0568a764&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9cd5c1cc-f233-4d60-9a7d-850aa556f1d4/Back.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070820Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=69683dc65bb9a360dd375545a2ec447bfdf0850768a1cb98c0a7527f0568a764&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  
+  
+
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=e88ae06107245d45d21c837786d181e081739475590637670dfe8007dc42f003&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=e88ae06107245d45d21c837786d181e081739475590637670dfe8007dc42f003&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
   
   
 
@@ -1248,7 +1414,11 @@
   
   
 
-  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T064425Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=8aeb0f89a5d84095c3088cd916d18843bf65a90e7a9528031dd3beb816e7d33a&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T064425Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=8aeb0f89a5d84095c3088cd916d18843bf65a90e7a9528031dd3beb816e7d33a&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  <div class="card-layer back back-ony" data-key=BackIllust data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9cd5c1cc-f233-4d60-9a7d-850aa556f1d4/Back.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070820Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=69683dc65bb9a360dd375545a2ec447bfdf0850768a1cb98c0a7527f0568a764&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9cd5c1cc-f233-4d60-9a7d-850aa556f1d4/Back.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070820Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=69683dc65bb9a360dd375545a2ec447bfdf0850768a1cb98c0a7527f0568a764&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  
+  
+
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=e88ae06107245d45d21c837786d181e081739475590637670dfe8007dc42f003&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=e88ae06107245d45d21c837786d181e081739475590637670dfe8007dc42f003&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
   
   
 
@@ -1304,7 +1474,11 @@
   
   
 
-  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T064425Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=8aeb0f89a5d84095c3088cd916d18843bf65a90e7a9528031dd3beb816e7d33a&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T064425Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=8aeb0f89a5d84095c3088cd916d18843bf65a90e7a9528031dd3beb816e7d33a&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  <div class="card-layer back back-ony" data-key=BackIllust data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9cd5c1cc-f233-4d60-9a7d-850aa556f1d4/Back.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070820Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=69683dc65bb9a360dd375545a2ec447bfdf0850768a1cb98c0a7527f0568a764&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9cd5c1cc-f233-4d60-9a7d-850aa556f1d4/Back.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070820Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=69683dc65bb9a360dd375545a2ec447bfdf0850768a1cb98c0a7527f0568a764&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  
+  
+
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=e88ae06107245d45d21c837786d181e081739475590637670dfe8007dc42f003&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=e88ae06107245d45d21c837786d181e081739475590637670dfe8007dc42f003&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
   
   
 
@@ -1359,7 +1533,11 @@
   
   
 
-  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T064425Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=8aeb0f89a5d84095c3088cd916d18843bf65a90e7a9528031dd3beb816e7d33a&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T064425Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=8aeb0f89a5d84095c3088cd916d18843bf65a90e7a9528031dd3beb816e7d33a&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  <div class="card-layer back back-ony" data-key=BackIllust data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9cd5c1cc-f233-4d60-9a7d-850aa556f1d4/Back.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070820Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=69683dc65bb9a360dd375545a2ec447bfdf0850768a1cb98c0a7527f0568a764&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9cd5c1cc-f233-4d60-9a7d-850aa556f1d4/Back.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070820Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=69683dc65bb9a360dd375545a2ec447bfdf0850768a1cb98c0a7527f0568a764&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  
+  
+
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=e88ae06107245d45d21c837786d181e081739475590637670dfe8007dc42f003&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=e88ae06107245d45d21c837786d181e081739475590637670dfe8007dc42f003&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
   
   
 
@@ -1415,7 +1593,11 @@
   
   
 
-  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T064425Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=8aeb0f89a5d84095c3088cd916d18843bf65a90e7a9528031dd3beb816e7d33a&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T064425Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=8aeb0f89a5d84095c3088cd916d18843bf65a90e7a9528031dd3beb816e7d33a&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  <div class="card-layer back back-ony" data-key=BackIllust data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9cd5c1cc-f233-4d60-9a7d-850aa556f1d4/Back.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070820Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=69683dc65bb9a360dd375545a2ec447bfdf0850768a1cb98c0a7527f0568a764&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9cd5c1cc-f233-4d60-9a7d-850aa556f1d4/Back.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070820Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=69683dc65bb9a360dd375545a2ec447bfdf0850768a1cb98c0a7527f0568a764&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  
+  
+
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=e88ae06107245d45d21c837786d181e081739475590637670dfe8007dc42f003&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=e88ae06107245d45d21c837786d181e081739475590637670dfe8007dc42f003&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
   
   
 
@@ -1470,7 +1652,11 @@
   
   
 
-  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T064425Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=8aeb0f89a5d84095c3088cd916d18843bf65a90e7a9528031dd3beb816e7d33a&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T064425Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=8aeb0f89a5d84095c3088cd916d18843bf65a90e7a9528031dd3beb816e7d33a&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  <div class="card-layer back back-ony" data-key=BackIllust data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9cd5c1cc-f233-4d60-9a7d-850aa556f1d4/Back.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070820Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=69683dc65bb9a360dd375545a2ec447bfdf0850768a1cb98c0a7527f0568a764&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9cd5c1cc-f233-4d60-9a7d-850aa556f1d4/Back.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070820Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=69683dc65bb9a360dd375545a2ec447bfdf0850768a1cb98c0a7527f0568a764&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  
+  
+
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=e88ae06107245d45d21c837786d181e081739475590637670dfe8007dc42f003&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=e88ae06107245d45d21c837786d181e081739475590637670dfe8007dc42f003&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
   
   
 
@@ -1526,7 +1712,11 @@
   
   
 
-  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T064425Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=8aeb0f89a5d84095c3088cd916d18843bf65a90e7a9528031dd3beb816e7d33a&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T064425Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=8aeb0f89a5d84095c3088cd916d18843bf65a90e7a9528031dd3beb816e7d33a&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  <div class="card-layer back back-ony" data-key=BackIllust data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9cd5c1cc-f233-4d60-9a7d-850aa556f1d4/Back.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070820Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=69683dc65bb9a360dd375545a2ec447bfdf0850768a1cb98c0a7527f0568a764&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9cd5c1cc-f233-4d60-9a7d-850aa556f1d4/Back.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070820Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=69683dc65bb9a360dd375545a2ec447bfdf0850768a1cb98c0a7527f0568a764&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  
+  
+
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=e88ae06107245d45d21c837786d181e081739475590637670dfe8007dc42f003&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=e88ae06107245d45d21c837786d181e081739475590637670dfe8007dc42f003&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
   
   
 
@@ -1581,7 +1771,11 @@
   
   
 
-  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T064425Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=8aeb0f89a5d84095c3088cd916d18843bf65a90e7a9528031dd3beb816e7d33a&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T064425Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=8aeb0f89a5d84095c3088cd916d18843bf65a90e7a9528031dd3beb816e7d33a&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  <div class="card-layer back back-ony" data-key=BackIllust data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9cd5c1cc-f233-4d60-9a7d-850aa556f1d4/Back.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070820Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=69683dc65bb9a360dd375545a2ec447bfdf0850768a1cb98c0a7527f0568a764&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9cd5c1cc-f233-4d60-9a7d-850aa556f1d4/Back.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070820Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=69683dc65bb9a360dd375545a2ec447bfdf0850768a1cb98c0a7527f0568a764&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  
+  
+
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=e88ae06107245d45d21c837786d181e081739475590637670dfe8007dc42f003&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=e88ae06107245d45d21c837786d181e081739475590637670dfe8007dc42f003&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
   
   
 
@@ -1637,7 +1831,11 @@
   
   
 
-  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T064425Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=8aeb0f89a5d84095c3088cd916d18843bf65a90e7a9528031dd3beb816e7d33a&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T064425Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=8aeb0f89a5d84095c3088cd916d18843bf65a90e7a9528031dd3beb816e7d33a&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  <div class="card-layer back back-ony" data-key=BackIllust data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9cd5c1cc-f233-4d60-9a7d-850aa556f1d4/Back.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070820Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=69683dc65bb9a360dd375545a2ec447bfdf0850768a1cb98c0a7527f0568a764&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9cd5c1cc-f233-4d60-9a7d-850aa556f1d4/Back.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070820Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=69683dc65bb9a360dd375545a2ec447bfdf0850768a1cb98c0a7527f0568a764&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  
+  
+
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=e88ae06107245d45d21c837786d181e081739475590637670dfe8007dc42f003&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=e88ae06107245d45d21c837786d181e081739475590637670dfe8007dc42f003&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
   
   
 
@@ -1692,7 +1890,11 @@
   
   
 
-  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T064425Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=8aeb0f89a5d84095c3088cd916d18843bf65a90e7a9528031dd3beb816e7d33a&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T064425Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=8aeb0f89a5d84095c3088cd916d18843bf65a90e7a9528031dd3beb816e7d33a&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  <div class="card-layer back back-ony" data-key=BackIllust data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9cd5c1cc-f233-4d60-9a7d-850aa556f1d4/Back.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070820Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=69683dc65bb9a360dd375545a2ec447bfdf0850768a1cb98c0a7527f0568a764&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9cd5c1cc-f233-4d60-9a7d-850aa556f1d4/Back.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070820Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=69683dc65bb9a360dd375545a2ec447bfdf0850768a1cb98c0a7527f0568a764&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  
+  
+
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=e88ae06107245d45d21c837786d181e081739475590637670dfe8007dc42f003&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=e88ae06107245d45d21c837786d181e081739475590637670dfe8007dc42f003&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
   
   
 
@@ -1741,13 +1943,15 @@
         </foreignObject>
       </g>
     </g></svg><svg class="pnp" width="297mm" height="210mm" viewbox="0 0 297 210">
-  <circle class="cross" cx=8.5 cy=13 />
-  <circle class="cross" cx=8.5 cy=197 />
-  <circle class="cross" cx=288.5 cy=13 />
-  <circle class="cross" cx=288.5 cy=197 />
+  <circle class="cross" cx=8.5 cy=9 />
+  <circle class="cross" cx=8.5 cy=201 />
+  <circle class="cross" cx=288.5 cy=9 />
+  <circle class="cross" cx=288.5 cy=201 />
 
   <rect class="hline" y=13 />
+  <rect class="hline" y=9 />
   <rect class="hline" y=197 />
+  <rect class="hline" y=201 />
   <rect class="hline" y=105 />
   <rect class="hline" y=109 />
   <rect class="hline" y=101 />
@@ -1760,7 +1964,11 @@
   
   
 
-  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T064425Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=8aeb0f89a5d84095c3088cd916d18843bf65a90e7a9528031dd3beb816e7d33a&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T064425Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=8aeb0f89a5d84095c3088cd916d18843bf65a90e7a9528031dd3beb816e7d33a&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  <div class="card-layer back back-ony" data-key=BackIllust data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9cd5c1cc-f233-4d60-9a7d-850aa556f1d4/Back.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070820Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=69683dc65bb9a360dd375545a2ec447bfdf0850768a1cb98c0a7527f0568a764&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9cd5c1cc-f233-4d60-9a7d-850aa556f1d4/Back.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070820Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=69683dc65bb9a360dd375545a2ec447bfdf0850768a1cb98c0a7527f0568a764&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  
+  
+
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=e88ae06107245d45d21c837786d181e081739475590637670dfe8007dc42f003&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=e88ae06107245d45d21c837786d181e081739475590637670dfe8007dc42f003&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
   
   
 
@@ -1815,7 +2023,11 @@
   
   
 
-  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T064425Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=8aeb0f89a5d84095c3088cd916d18843bf65a90e7a9528031dd3beb816e7d33a&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T064425Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=8aeb0f89a5d84095c3088cd916d18843bf65a90e7a9528031dd3beb816e7d33a&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  <div class="card-layer back back-ony" data-key=BackIllust data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9cd5c1cc-f233-4d60-9a7d-850aa556f1d4/Back.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070820Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=69683dc65bb9a360dd375545a2ec447bfdf0850768a1cb98c0a7527f0568a764&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9cd5c1cc-f233-4d60-9a7d-850aa556f1d4/Back.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070820Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=69683dc65bb9a360dd375545a2ec447bfdf0850768a1cb98c0a7527f0568a764&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  
+  
+
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=e88ae06107245d45d21c837786d181e081739475590637670dfe8007dc42f003&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=e88ae06107245d45d21c837786d181e081739475590637670dfe8007dc42f003&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
   
   
 
@@ -1871,7 +2083,11 @@
   
   
 
-  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T064425Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=8aeb0f89a5d84095c3088cd916d18843bf65a90e7a9528031dd3beb816e7d33a&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T064425Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=8aeb0f89a5d84095c3088cd916d18843bf65a90e7a9528031dd3beb816e7d33a&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  <div class="card-layer back back-ony" data-key=BackIllust data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9cd5c1cc-f233-4d60-9a7d-850aa556f1d4/Back.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070820Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=69683dc65bb9a360dd375545a2ec447bfdf0850768a1cb98c0a7527f0568a764&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9cd5c1cc-f233-4d60-9a7d-850aa556f1d4/Back.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070820Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=69683dc65bb9a360dd375545a2ec447bfdf0850768a1cb98c0a7527f0568a764&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  
+  
+
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=e88ae06107245d45d21c837786d181e081739475590637670dfe8007dc42f003&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=e88ae06107245d45d21c837786d181e081739475590637670dfe8007dc42f003&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
   
   
 
@@ -1926,7 +2142,11 @@
   
   
 
-  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T064425Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=8aeb0f89a5d84095c3088cd916d18843bf65a90e7a9528031dd3beb816e7d33a&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T064425Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=8aeb0f89a5d84095c3088cd916d18843bf65a90e7a9528031dd3beb816e7d33a&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  <div class="card-layer back back-ony" data-key=BackIllust data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9cd5c1cc-f233-4d60-9a7d-850aa556f1d4/Back.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070820Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=69683dc65bb9a360dd375545a2ec447bfdf0850768a1cb98c0a7527f0568a764&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9cd5c1cc-f233-4d60-9a7d-850aa556f1d4/Back.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070820Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=69683dc65bb9a360dd375545a2ec447bfdf0850768a1cb98c0a7527f0568a764&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  
+  
+
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=e88ae06107245d45d21c837786d181e081739475590637670dfe8007dc42f003&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=e88ae06107245d45d21c837786d181e081739475590637670dfe8007dc42f003&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
   
   
 
@@ -1982,7 +2202,11 @@
   
   
 
-  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T064425Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=8aeb0f89a5d84095c3088cd916d18843bf65a90e7a9528031dd3beb816e7d33a&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T064425Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=8aeb0f89a5d84095c3088cd916d18843bf65a90e7a9528031dd3beb816e7d33a&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  <div class="card-layer back back-ony" data-key=BackIllust data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9cd5c1cc-f233-4d60-9a7d-850aa556f1d4/Back.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070820Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=69683dc65bb9a360dd375545a2ec447bfdf0850768a1cb98c0a7527f0568a764&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9cd5c1cc-f233-4d60-9a7d-850aa556f1d4/Back.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070820Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=69683dc65bb9a360dd375545a2ec447bfdf0850768a1cb98c0a7527f0568a764&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  
+  
+
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=e88ae06107245d45d21c837786d181e081739475590637670dfe8007dc42f003&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=e88ae06107245d45d21c837786d181e081739475590637670dfe8007dc42f003&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
   
   
 
@@ -2037,7 +2261,11 @@
   
   
 
-  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T064425Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=8aeb0f89a5d84095c3088cd916d18843bf65a90e7a9528031dd3beb816e7d33a&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T064425Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=8aeb0f89a5d84095c3088cd916d18843bf65a90e7a9528031dd3beb816e7d33a&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  <div class="card-layer back back-ony" data-key=BackIllust data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9cd5c1cc-f233-4d60-9a7d-850aa556f1d4/Back.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070820Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=69683dc65bb9a360dd375545a2ec447bfdf0850768a1cb98c0a7527f0568a764&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9cd5c1cc-f233-4d60-9a7d-850aa556f1d4/Back.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070820Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=69683dc65bb9a360dd375545a2ec447bfdf0850768a1cb98c0a7527f0568a764&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  
+  
+
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=e88ae06107245d45d21c837786d181e081739475590637670dfe8007dc42f003&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=e88ae06107245d45d21c837786d181e081739475590637670dfe8007dc42f003&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
   
   
 
@@ -2093,7 +2321,11 @@
   
   
 
-  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T064425Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=8aeb0f89a5d84095c3088cd916d18843bf65a90e7a9528031dd3beb816e7d33a&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T064425Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=8aeb0f89a5d84095c3088cd916d18843bf65a90e7a9528031dd3beb816e7d33a&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  <div class="card-layer back back-ony" data-key=BackIllust data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9cd5c1cc-f233-4d60-9a7d-850aa556f1d4/Back.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070820Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=69683dc65bb9a360dd375545a2ec447bfdf0850768a1cb98c0a7527f0568a764&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9cd5c1cc-f233-4d60-9a7d-850aa556f1d4/Back.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070820Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=69683dc65bb9a360dd375545a2ec447bfdf0850768a1cb98c0a7527f0568a764&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  
+  
+
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=e88ae06107245d45d21c837786d181e081739475590637670dfe8007dc42f003&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=e88ae06107245d45d21c837786d181e081739475590637670dfe8007dc42f003&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
   
   
 
@@ -2148,7 +2380,11 @@
   
   
 
-  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T064425Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=8aeb0f89a5d84095c3088cd916d18843bf65a90e7a9528031dd3beb816e7d33a&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T064425Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=8aeb0f89a5d84095c3088cd916d18843bf65a90e7a9528031dd3beb816e7d33a&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  <div class="card-layer back back-ony" data-key=BackIllust data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9cd5c1cc-f233-4d60-9a7d-850aa556f1d4/Back.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070820Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=69683dc65bb9a360dd375545a2ec447bfdf0850768a1cb98c0a7527f0568a764&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9cd5c1cc-f233-4d60-9a7d-850aa556f1d4/Back.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070820Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=69683dc65bb9a360dd375545a2ec447bfdf0850768a1cb98c0a7527f0568a764&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  
+  
+
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=e88ae06107245d45d21c837786d181e081739475590637670dfe8007dc42f003&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=e88ae06107245d45d21c837786d181e081739475590637670dfe8007dc42f003&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
   
   
 
@@ -2201,6 +2437,46 @@
       <foreignObject class="px-to-mm" width="56mm" height="88mm"  style="padding: 1mm;">
         <div class="card-frame face summary">
           
+  
+  
+
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=e88ae06107245d45d21c837786d181e081739475590637670dfe8007dc42f003&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=e88ae06107245d45d21c837786d181e081739475590637670dfe8007dc42f003&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  
+  
+
+  <div class="card-layer name face-only" data-key=Name data-val=长发妹><p>长发妹</p></div>
+  
+  
+
+  <div class="card-layer count h0 back-only" data-key=h-0 data-val=4,1,1,0><p>4,1,1,0</p></div>
+  
+  
+
+  <div class="card-layer count h1 back-only" data-key=h-1 data-val=5,1,0,0><p>5,1,0,0</p></div>
+  
+  
+
+  <div class="card-layer count h2 back-only" data-key=h-2 data-val=4,1,0,1><p>4,1,0,1</p></div>
+  
+  
+
+  <div class="card-layer count h3 back-only" data-key=h-3 data-val=5,0,0,1><p>5,0,0,1</p></div>
+  
+  
+
+  <div class="card-layer count c0 back-only" data-key=c-0 data-val=4,0,1,1><p>4,0,1,1</p></div>
+  
+  
+
+  <div class="card-layer count c1 back-only" data-key=c-1 data-val=4,0,1,1><p>4,0,1,1</p></div>
+  
+  
+
+  <div class="card-layer count c2 back-only" data-key=c-2 data-val=3,0,2,1><p>3,0,2,1</p></div>
+  
+  
+
+  <div class="card-layer count c3 back-only" data-key=c-3 data-val=4,0,2,0><p>4,0,2,0</p></div>
         </div>
       </foreignObject>
 
@@ -2208,6 +2484,46 @@
         <foreignObject class="px-to-mm" width="56mm" height="88mm"  style="padding: 1mm;">
           <div class="card-frame back summary">
             
+  
+  
+
+  <div class="card-layer illust face-only" data-key=Illustration data-val=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=e88ae06107245d45d21c837786d181e081739475590637670dfe8007dc42f003&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject><img src=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5925969-a475-4e63-9264-7ecf0fedebb1/playerArtboard-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220826%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T070819Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=e88ae06107245d45d21c837786d181e081739475590637670dfe8007dc42f003&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject></div>
+  
+  
+
+  <div class="card-layer name face-only" data-key=Name data-val=长发妹><p>长发妹</p></div>
+  
+  
+
+  <div class="card-layer count h0 back-only" data-key=h-0 data-val=4,1,1,0><p>4,1,1,0</p></div>
+  
+  
+
+  <div class="card-layer count h1 back-only" data-key=h-1 data-val=5,1,0,0><p>5,1,0,0</p></div>
+  
+  
+
+  <div class="card-layer count h2 back-only" data-key=h-2 data-val=4,1,0,1><p>4,1,0,1</p></div>
+  
+  
+
+  <div class="card-layer count h3 back-only" data-key=h-3 data-val=5,0,0,1><p>5,0,0,1</p></div>
+  
+  
+
+  <div class="card-layer count c0 back-only" data-key=c-0 data-val=4,0,1,1><p>4,0,1,1</p></div>
+  
+  
+
+  <div class="card-layer count c1 back-only" data-key=c-1 data-val=4,0,1,1><p>4,0,1,1</p></div>
+  
+  
+
+  <div class="card-layer count c2 back-only" data-key=c-2 data-val=3,0,2,1><p>3,0,2,1</p></div>
+  
+  
+
+  <div class="card-layer count c3 back-only" data-key=c-3 data-val=4,0,2,0><p>4,0,2,0</p></div>
           </div>
         </foreignObject>
       </g>
