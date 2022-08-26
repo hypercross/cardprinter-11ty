@@ -10,4 +10,8 @@
       <img src={{ val }}>
     {%- endif -%}
   </div>
+
+  <script type="application/json">
+  {{ item | dump}}
+  </script>
 {%- endfor -%}
