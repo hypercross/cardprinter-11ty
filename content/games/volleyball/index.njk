@@ -4,6 +4,8 @@ layers:
   play:
   - [illust face-only,   img,  Illustration]
   - [name face-only,    text,  Name]
+  - [field-up face-only,       tag,  '']
+  - [field-down face-only,     tag,  '']
   - [ball h0 face-only,  tag,  h-0]
   - [ball h1 face-only,  tag,  h-1]
   - [ball h2 face-only,  tag,  h-2]
@@ -23,17 +25,31 @@ layers:
   }
 
   .card-frame{
-    --fx: 4mm;
+    --fx: 6mm;
     --fy: 0mm;
     --bx: 0mm;
     --by: 0mm
   }
+  .field-up, .field-down{
+    width: 16mm;
+    height: 16mm;
+    background: white;
+    transform: translate(-50%, -50%) translate(2mm, 2mm) translate(var(--fx), var(--fy));
 
-  .h0, .h1, .h2, .h3{
-    --fy: 12mm;
+    border: .5mm solid slategrey;
   }
-  .c0, .c1, .c2, .c3{
-    --fy: 20mm;
+  .field-up{
+    border-radius: 3mm 3mm 0 0;
+  }
+  .field-down{
+    border-radius: 0 0 3mm 3mm;
+  }
+
+  .h0, .h1, .h2, .h3, .field-up{
+    --fy: 6mm;
+  }
+  .c0, .c1, .c2, .c3, .field-down{
+    --fy: 22mm;
   }
 
   .h0, .h2, .c0, .c2{
